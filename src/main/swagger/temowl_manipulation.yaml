@@ -1,0 +1,876 @@
+swagger: '2.0'
+info:
+  description: >-
+    Queries on single Terminologies/Concepts (Includes Versioning/Auditing, excludes
+    Terminology subset operations). !!This definition currently isn't on par with the manipulation API!!
+    #TODO: adopt stylistic changes since the API-split, include proper ID handling, remove $ref /Obj/properties occurrences
+  version: 1.0.0
+  title: SAM - semantic aggregation machine
+host: api.temowl.tmp
+basePath: /v1
+tags:
+  - name: manipulation
+    description: >-
+      Manipulation queries are always performed on the newest versionTag of the
+      terminology and none can be supplied.
+  - name: auditing
+    description: >-
+      Allow auditing of changes.
+  - name: versioning
+    description: >-
+      Allow versioning of terminologies.
+  - name: exporting
+    description: >-
+      Export terminologies in different formats.
+schemes:
+  - https
+  - http
+paths:
+  '/terminologies/{terminologyId}/concepts/{conceptId}':
+    delete:
+      tags:
+        - manipulation
+      summary: Delete a concept
+      description: Delete a concept from a terminology. Only possible on locally hosted Terminologies.
+      operationId: Concept-Delete
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+      responses:
+        '403':
+          description: Operation forbidden on external Terminologies
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+    patch:
+      tags:
+        - manipulation
+      summary: Change a concept's ID, prefLabel or BEL encoding.
+      description: >-
+        Patch a concept to change its preferred label, its ID or its BEL-specific encoding. Old IDs and preferred Labels will become an altLabel. Changing the ID is only possible on locally hosted Terminologies. Changes to other properties will not be accepted.
+      operationId: Concept-Change-ID-PrefLabel-Encoding
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: body
+          name: concept
+          description: The concept with a new preferred Label, new ID or new BEL-encoding.
+          required: true
+          schema:
+            $ref: '#/definitions/Concept'
+      responses:
+        '403':
+          description: Unauthorized patch or Operation forbidden on external Terminologies
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      tags:
+        - manipulation
+      summary: Add a new Label
+      description: Create a new altLabel.
+      operationId: Concept-Label-Add
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: body
+          name: label
+          description: The new altLabel.
+          required: true
+          schema:
+            $ref: '#/definitions/Label'
+      responses:
+        '200':
+          description: Ambiguous Label added
+          schema:
+            type: string
+            default: 'Added the label. The label already existed as a label for a different concept.'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+        '405':
+          description: Duplicate Label supplied
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/mappings':
+    post:
+      tags:
+        - manipulation
+      summary: Add a Mapping
+      description: Create a new Mapping.
+      operationId: Concept-Add-Mapping
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: query
+          name: terminologyReference
+          type: string
+          description: The mapped concept's terminology's ID.
+          required: true
+        - in: query
+          name: conceptReference
+          type: string
+          description: The mapped concept's ID.
+          required: true
+        - in: query
+          name: type
+          type: string
+          description: Mappings can have one of three types.
+          required: true
+          enum:
+            - exactMatch
+            - closeMatch
+            - relatedMatch
+      responses:
+        '400':
+          description: Invalid type supplied
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - manipulation
+      summary: Delete a Mapping
+      description: Delete a mapping from a concept.
+      operationId: Concept-Delete-Mapping
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: query
+          name: terminologyReference
+          type: string
+          description: The mapped concept's terminology's ID.
+          required: true
+        - in: query
+          name: conceptReference
+          type: string
+          description: The mapped concept's ID.
+          required: true
+      responses:
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+    patch:
+      tags:
+        - manipulation
+      summary: Update a mapping's type.
+      description: Patch the mapping's type. Changes to other properties will not be accepted.
+      operationId: Mapping-Change-Type
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: query
+          name: terminologyReference
+          type: string
+          description: The mapped concept's terminology's ID.
+          required: true
+        - in: query
+          name: conceptReference
+          type: string
+          description: The mapped concept's ID.
+          required: true
+      responses:
+        '401':
+          description: Unauthorized patch
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  ########## Manipulation
+  '/terminologies/{terminologyId}/concepts':
+    post:
+      tags:
+        - manipulation
+      summary: Add a new Concept
+      description: >-
+        Create a new concept and add it to a terminology. Requires an ID and a
+        preferred Label.
+      operationId: Concept-Add
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: body
+          name: concept
+          description: Concept to be added.
+          required: true
+          schema:
+            $ref: '#/definitions/Concept'
+      responses:
+        '400':
+          description: Unacceptable concept body
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/labels/{labelId}':
+    delete:
+      tags:
+        - manipulation
+      summary: Delete a Label from a concept
+      description: Delete a label from a concept.
+      operationId: Concept-Label-Delete
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: path
+          name: labelId
+          description: ID of the label to be removed from the concept.
+          required: true
+          type: string
+      responses:
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/labels/{labelId}':
+    delete:
+      tags:
+        - manipulation
+      summary: Delete a Label from all concepts
+      description: Delete a label from all concepts that are within the given terminology.
+      operationId: Concept-Delete-ALL-Label
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: labelId
+          description: ID of the label to be removed from the entire terminology.
+          required: true
+          type: string
+      responses:
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/relationships':
+    post:
+      tags:
+        - manipulation
+      summary: Change a concept's hierarchy
+      description: >-
+        Set a concept's hierarchical relationship to another concept. Use type=related/broader/narrower to define relationship type.
+      operationId: Change-Concept-Hierarchy-Add
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept whose hierarchical relationship will be changed.
+          required: true
+          type: string
+        - in: query
+          name: targetConceptId
+          description: ID of the second concept targeted by the relationship.
+          required: true
+          type: string
+        - in: query
+          name: type
+          description: Available types are broader, narrower or related.
+          required: true
+          type: string
+      responses:
+        '400':
+          description: Invalid relation type supplied
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      tags:
+        - manipulation
+      summary: Delete a Relationship
+      description: Remove a hierarchical relationship from a concept.
+      operationId: Change-Concept-Hierarchy-Remove
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: conceptId
+          description: ID of the concept.
+          required: true
+          type: string
+        - in: query
+          name: targetConceptId
+          description: ID of the second concept targeted by the relationship.
+          required: true
+          type: string
+        - in: query
+          name: type
+          description: Available types are broader, narrower or related.
+          required: true
+          type: string
+      responses:
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  ########## Auditing
+  '/terminologies/{terminologyId}/changes':
+    get:
+      tags:
+        - auditing
+      summary: Get all changes
+      description: Retrieve all changes on a terminology, including their meta information and comments, paginated using page and size.
+      operationId: View-Changes
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: query
+          name: page
+          description: The requested page
+          type: integer
+          format: long
+          default: 1
+        - in: query
+          name: size
+          description: Size of pages
+          type: integer
+          format: int64
+          default: 10
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Terminology/properties/changes'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/changes/{changeId}/comments':
+    post:
+      tags:
+        - auditing
+      summary: Add a comment
+      description: Create a new Comment on a change.
+      operationId: Change-Add-Comment
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: changeId
+          description: ID of the change.
+          required: true
+          type: string
+        - in: body
+          name: comment
+          description: The new Comment.
+          required: true
+          schema:
+            $ref: '#/definitions/Comment'
+      responses:
+        '400':
+          description: Unacceptable concept body
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  '/terminologies/{terminologyId}/changes/{changeId}':
+    patch:
+      tags:
+        - auditing
+      summary: Approve a change
+      description: Approve a pending change by patching approvalStatus to "approved". It gets performed on the terminology. Changes to other properties will not be accepted.
+      operationId: Approve-change
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+        - in: path
+          name: changeId
+          description: ID of the change.
+          required: true
+          type: string
+        - in: body
+          name: change
+          description: The change, now approved.
+          required: true
+          schema:
+            $ref: '#/definitions/Change'
+      responses:
+        '403':
+          description: Unauthorized patch
+          schema:
+            $ref: '#/definitions/Error'
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+  ########## Versioning
+  '/terminologies/{terminologyId}/tags':
+    post:
+      tags:
+        - versioning
+      summary: Create a version tag
+      description: The current state of the terminology gets saved with a versionTag.
+      operationId: Tag-create
+      parameters:
+        - in: path
+          name: terminologyId
+          description: ID of the terminology.
+          required: true
+          type: string
+      responses:
+        '404':
+          description: Object not found
+          schema:
+            $ref: '#/definitions/Error'
+
+####################### Object Definitions
+definitions:
+  Terminology:
+    type: object
+    required:
+      - terminologyIri
+      - longName
+      - shortName
+      - description
+      - provenance
+    properties:
+      terminologyIri:
+        description: The terminology's IRI.
+        type: string
+        example: 'http://purl.obolibrary.org/obo/go.owl' #still needed? See baseURL
+      longName:
+        type: string
+        example: 'Gene Ontology'
+      shortName:
+        type: string
+        description: Unique. Used in query paths as terminologyId. Also used in CURIEs to represent the baseURL.
+        example: 'GO'
+      baseURL:
+        type: string
+        description: Access the terminology's contents here by adding the content's identifier.
+        example: 'http://purl.obolibrary.org/obo/GO_'
+      description:
+        type: array
+        items:
+          type: object
+          description: Only one description per language.
+          required:
+            - lang
+            - desc
+          properties:
+            lang:
+              description: This description's language. Use language tags as defined for rdf:plainliteral.
+              example: '@en'
+              type: string
+            desc:
+              description: The description.
+              example: 'The Gene Ontology provides the logical structure of the biological functions and their relationships to one another'
+              type: string
+      citation:
+        type: object
+        required:
+          - original
+        properties:
+          original:
+            type: string
+            example: 'https://www.ncbi.nlm.nih.gov/pubmed/10802651'
+          refined:
+            type: string
+      changes:
+        description: A list of changes that have been performed on the terminology.
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/changes'
+      tags:
+        description: A list of versionTags that have been created by managers.
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/tags'
+  Concept:
+    type: object
+    required:
+      - prefLabel
+      - altLabels
+    properties:
+      identifier:
+        type: string
+        description: "Unique. Used in query paths as conceptId. Forms a CURIE with the terminology's shortName like so: [shortName:identifier]."
+        example: '0008289'
+      description:
+        type: object
+        description: Only one description per language.
+        required:
+          - lang
+          - desc
+        properties:
+          lang:
+            description: This description's language. Use language tags as defined for rdf:plainliteral.
+            example: '@en'
+            type: string
+          desc:
+            description: The description.
+            type: string
+      prefLabel:
+        $ref: '#/definitions/Label'
+      mostUsedLabels:
+        description: Some of the most used altLabels.
+        type: array
+        items:
+          $ref: '#/definitions/Label'
+      altLabels:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/labels'
+      mappings:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/mappings'
+      mostUsedBroader:
+        description: Some of the most used broader concepts.
+        type: array
+        items:
+          $ref: '#/definitions/ConceptMin'
+      directBroader:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/broader'
+        description: All concepts that are directly broader in the concept hierarchy.
+      allBroader:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/broader?transitive=true'
+      mostUsedNarrower:
+        description: Some of the most used narrower concepts.
+        type: array
+        items:
+          $ref: '#/definitions/ConceptMin'
+      directNarrower:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/narrower'
+        description: All concepts that are directly narrower in the concept hierarchy.
+      allNarrower:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/narrower?transitive=true'
+        description: The levels of concepts that are transitively narrower in the concept hierarchy.
+      related:
+        description: All concepts marked as related.
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321/relateds'
+  ConceptMin:
+    type: object
+    required:
+      - conId
+      - prefLabel
+      - conceptInfo
+    properties:
+      conId:
+        $ref: '#/definitions/Concept/properties/identifier'
+      prefLabel:
+        $ref: '#/definitions/Concept/properties/prefLabel'
+      conceptInfo:
+        type: string
+        example: 'api.temowl.tmp/terminologies/99999/concepts/54321'
+  Label:
+    type: object
+    required:
+      - name
+    properties:
+      name: #ID
+        description: A name that describes an entity. Also used as the label's internal ID.
+        type: string
+        example: 'lipid binding'
+      lang:
+        description: The label's language. Use language tags as defined for rdf:plainliteral.
+        example: '@en'
+        type: string
+  Mapping:
+    type: object
+    description: Relationship between concepts of different Terminologies. Can be identified in queries from both concepts.
+    required:
+      - type
+      - conceptA
+      - conceptB
+    properties:
+      type:
+        type: string
+        description: Mappings can have one of three types.
+        enum:
+          - exactMatch
+          - closeMatch
+          - relatedMatch
+      conceptA:
+        $ref: '#/definitions/ConceptMin'
+      conceptB:
+        $ref: '#/definitions/ConceptMin'
+  Change:
+    type: object
+    required:
+      - changeId
+      - identifier
+      - change
+      - timestamp
+      - approvalStatus
+      - author
+    properties:
+      changeId:
+        description: The change's internal ID.
+        example: '32123'
+        type: string
+      identifier:
+        $ref: '#/definitions/Concept/properties/identifier'
+      change:
+        type: string
+        description: placeholder for saving changes
+      timestamp:
+        description: The time at which the change occurred.
+        example: '???'
+        type: string
+        format: date-time
+      approvalStatus:
+        type: string
+        description: Changes can have one of three states.
+        enum:
+          - approved
+          - declined
+          - pending
+      author:
+        $ref: '#/definitions/Person'
+      auditor:
+        $ref: '#/definitions/Person'
+      comments:
+        description: Comments left on the change.
+        type: array
+        items:
+          $ref: '#/definitions/Comment'
+  Comment:
+    type: object
+    required:
+      - commentId
+      - content
+    properties:
+      commentId:
+        description: The comment's internal ID.
+        example: '12121'
+        type: string
+      content:
+        description: The comment text.
+        type: string
+      author:
+        $ref: '#/definitions/Person'
+
+####################### ProMiner
+  PM_Model:
+    allOf:
+      - $ref: '#/definitions/Terminology' #concepts inherited, now duplicate
+      - type: object
+        required:
+          - tokens
+          - parameters
+          - concepts
+        properties:
+          tokens:
+            type: array
+            items:
+              $ref: '#/definitions/PM_Token_Synonym'
+          parameters:
+            type: array
+            items:
+              $ref: '#/definitions/PM_Parameter'
+          concepts:
+            type: array
+            items:
+              $ref: '#/definitions/PM_Concept'
+  PM_Token_Synonym: #defines Tokens and Synonyms
+    type: object
+    required:
+      - prefName
+    properties:
+      prefName:
+        type: string
+      properties:
+        type: array
+        items:
+          $ref: '#/definitions/PM_Property'
+  PM_Property:
+    type: object
+    required:
+      - name
+      - propertyId
+    properties:
+      name:
+        type: string
+      propertyId:
+        type: string
+  PM_BoolProp:
+    allOf:
+      - $ref: '#/definitions/PM_Property'
+      - type: object
+        required:
+          - boolean
+        properties:
+          boolean:
+            type: boolean
+  PM_DoubProp:
+    allOf:
+      - $ref: '#/definitions/PM_Property'
+      - type: object
+        required:
+          - double
+        properties:
+          double:
+            type: number
+  PM_StringProp: #used for parameter, not property definitions
+    allOf:
+      - $ref: '#/definitions/PM_Property'
+      - type: object
+        required:
+          - string
+        properties:
+          string:
+            type: string
+  PM_Parameter: #defines Curation and Tagging Parameters
+    $ref: '#/definitions/PM_Property'
+  PM_Concept:
+    type: object
+    required:
+      - synonyms
+      - references
+      - prefName
+    properties:
+      prefName:
+        type: string
+      synonyms:
+        type: array
+        items:
+          $ref: '#/definitions/PM_Token_Synonym'
+      references:
+        type: array
+        items:
+          type: string
+####################### Other definitions
+  Error:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        example: 400
+      message:
+        type: string
+        description: error type
+      cause:
+        type: string
+        description: detailed information on what happened
+  Person:
+    type: object
+    required:
+      - name
+    properties:
+      name:
+        type: string
+        example: 'John Doe'
+      email:
+        type: string
+        example: 'john.doe@mail.net'

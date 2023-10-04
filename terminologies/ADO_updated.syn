@@ -1,0 +1,1914 @@
+# updated
+0000001@BFO|entity:entity
+0000002@BFO|continuant:continuant
+0000003@BFO|occurrent:occurrent
+0000004@BFO|independent continuant:independent continuant
+0000020@BFO|specifically dependent continuant:specifically dependent continuant
+0000031@BFO|generically dependent continuant:generically dependent continuant
+0000006@BFO|spatial region:spatial region
+0000141@BFO|immaterial entity:immaterial entity
+0000029@BFO|site:site
+0000140@BFO|continuant fiat boundary:continuant fiat boundary
+0000008@BFO|temporal region:temporal region
+0000011@BFO|spatiotemporal region:spatiotemporal region
+0000015@BFO|process:process
+0000035@BFO|process boundary:process boundary
+0000009@BFO|two-dimensional spatial region:two-dimensional spatial region
+0000028@BFO|three-dimensional spatial region:three-dimensional spatial region
+0000016@BFO|disposition:disposition
+0000017@BFO|realizable entity:realizable entity
+0000023@BFO|role:role
+0000019@BFO|quality:quality
+0000018@BFO|zero-dimensional spatial region:zero-dimensional spatial region
+0000024@BFO|fiat object part:fiat object part
+0000040@BFO|material entity:material entity
+0000026@BFO|one-dimensional spatial region:one-dimensional spatial region
+0000027@BFO|object aggregate:object aggregate
+0000030@BFO|object:object
+0000034@BFO|function:function
+0000038@BFO|one-dimensional temporal region:one-dimensional temporal region
+0000148@BFO|zero-dimensional temporal region:zero-dimensional temporal region
+0000142@BFO|one-dimensional continuant fiat boundary:one-dimensional continuant fiat boundary
+0000146@BFO|two-dimensional continuant fiat boundary:two-dimensional continuant fiat boundary
+0000147@BFO|zero-dimensional continuant fiat boundary:zero-dimensional continuant fiat boundary
+0000144@BFO|process profile:process profile
+0000145@BFO|relational quality:relational quality
+0000214@BTO|cell culture:cell culture
+0000771@BTO|macroglia:macroglia
+0000255@CL|eukaryotic cell:eukaryotic cell
+0000932@BTO|neuroblastoma cell line:neuroblastoma cell line
+C19146@NCIT|In Vitro Model:In Vitro Model
+0001481@BTO|plant:plant
+0001976@BTO|Neuro-2a cell:Neuro-2a cell
+0002496@BTO|dentate gyrus:dentate gyrus
+62493@FMA|Hippocampus:Hippocampus
+0002774@BTO|amyloid plaque:amyloid plaque
+0012639@HP|Abnormal nervous system morphology:Abnormal nervous system morphology
+10652@DOID|Alzheimer's disease:Alzheimer's disease
+0004477@BTO|medial temporal lobe:medial temporal lobe
+0000956@UBERON|cerebral cortex:cerebral cortex
+10119@CHEBI|ziprasidone:ziprasidone
+35476@CHEBI|antipsychotic agent:antipsychotic agent
+12777@CHEBI|vitamin A:vitamin A
+18059@CHEBI|lipid:lipid
+131863@CHEBI|docosanoid:docosanoid
+35366@CHEBI|fatty acid:fatty acid
+135342@CHEBI|reboxetine:reboxetine
+25698@CHEBI|ether:ether
+135756@CHEBI|spirapril:spirapril
+33261@CHEBI|organosulfur compound:organosulfur compound
+35352@CHEBI|organonitrogen compound:organonitrogen compound
+72695@CHEBI|organic molecule:organic molecule
+13705@CHEBI|acetoacetate:acetoacetate
+138655@CHEBI|protectin D1:protectin D1
+33582@CHEBI|carbon group molecular entity:carbon group molecular entity
+33822@CHEBI|organic hydroxy compound:organic hydroxy compound
+3000000102@OGG|ADAM10:ADAM10
+140325@CHEBI|secondary carboxamide:secondary carboxamide
+37622@CHEBI|carboxamide:carboxamide
+142593@CHEBI|4-hydroxynonenal:4-hydroxynonenal
+33304@CHEBI|chalcogen molecular entity:chalcogen molecular entity
+36357@CHEBI|polyatomic entity:polyatomic entity
+145810@CHEBI|insulin:insulin
+15841@CHEBI|polypeptide:polypeptide
+33302@CHEBI|pnictogen molecular entity:pnictogen molecular entity
+15345@CHEBI|acetoacetyl-CoA:acetoacetyl-CoA
+25710@CHEBI|organophosphorus compound:organophosphorus compound
+35701@CHEBI|ester:ester
+15346@CHEBI|coenzyme A:coenzyme A
+15351@CHEBI|acetyl-CoA:acetyl-CoA
+15354@CHEBI|choline:choline
+24870@CHEBI|ion:ion
+15355@CHEBI|acetylcholine:acetylcholine
+15356@CHEBI|cysteine:cysteine
+15361@CHEBI|pyruvate:pyruvate
+15377@CHEBI|water:water
+15380@CHEBI|succinyl-CoA:succinyl-CoA
+15440@CHEBI|squalene:squalene
+33296@CHEBI|alkali metal molecular entity:alkali metal molecular entity
+15551@CHEBI|prostaglandin E2:prostaglandin E2
+15554@CHEBI|prostaglandin H2:prostaglandin H2
+15641@CHEBI|5-methyltetrahydrofolic acid:5-methyltetrahydrofolic acid
+176842@CHEBI|vitamin B9:vitamin B9
+15784@CHEBI|N-acetyl-D-glucosamine 6-phosphate:N-acetyl-D-glucosamine 6-phosphate
+16670@CHEBI|peptide:peptide
+33839@CHEBI|macromolecule:macromolecule
+15843@CHEBI|arachidonic acid:arachidonic acid
+15846@CHEBI|NAD(+):NAD(+)
+15891@CHEBI|taurine:taurine
+15899@CHEBI|(R)-5-diphosphomevalonic acid:(R)-5-diphosphomevalonic acid
+16038@CHEBI|phosphatidylethanolamine:phosphatidylethanolamine
+16091@CHEBI|dolichol:dolichol
+24913@CHEBI|isoprenoid:isoprenoid
+16113@CHEBI|cholesterol:cholesterol
+16189@CHEBI|sulfate:sulfate
+16240@CHEBI|hydrogen peroxide:hydrogen peroxide
+16247@CHEBI|phospholipid:phospholipid
+25703@CHEBI|organic phosphate:organic phosphate
+37734@CHEBI|phosphoric ester:phosphoric ester
+16337@CHEBI|phosphatidic acid:phosphatidic acid
+16389@CHEBI|ubiquinones:ubiquinones
+16393@CHEBI|sphingosine:sphingosine
+16474@CHEBI|NADPH:NADPH
+16494@CHEBI|lipoic acid:lipoic acid
+16521@CHEBI|lanosterol:lanosterol
+16541@CHEBI|protein polypeptide chain:protein polypeptide chain
+16584@CHEBI|isopentenyl diphosphate:isopentenyl diphosphate
+16668@CHEBI|hypotaurine:hypotaurine
+16796@CHEBI|melatonin:melatonin
+16811@CHEBI|methionine:methionine
+16828@CHEBI|L-tryptophan:L-tryptophan
+16856@CHEBI|glutathione:glutathione
+16865@CHEBI|gamma-aminobutyric acid:gamma-aminobutyric acid
+16908@CHEBI|NADH:NADH
+16991@CHEBI|deoxyribonucleic acid:deoxyribonucleic acid
+33695@CHEBI|information biomacromolecule:information biomacromolecule
+17087@CHEBI|ketone:ketone
+17211@CHEBI|geranyl diphosphate:geranyl diphosphate
+17230@CHEBI|homocysteine:homocysteine
+17234@CHEBI|glucose:glucose
+17347@CHEBI|testosterone:testosterone
+17359@CHEBI|sulfite:sulfite
+17478@CHEBI|aldehyde:aldehyde
+176843@CHEBI|vitamin B12:vitamin B12
+17761@CHEBI|ceramide:ceramide
+17792@CHEBI|organohalogen compound:organohalogen compound
+24471@CHEBI|halogen molecular entity:halogen molecular entity
+33285@CHEBI|heteroorganic entity:heteroorganic entity
+37578@CHEBI|halide:halide
+17858@CHEBI|glutathione disulfide:glutathione disulfide
+17976@CHEBI|ubiquinol:ubiquinol
+17984@CHEBI|acyl-CoA:acyl-CoA
+37240@CHEBI|adenosine 3',5'-bisphosphate:adenosine 3',5'-bisphosphate
+51277@CHEBI|thioester:thioester
+17996@CHEBI|chloride:chloride
+18009@CHEBI|NADP(+):NADP(+)
+18022@CHEBI|thiocyanate:thiocyanate
+50860@CHEBI|organic molecular entity:organic molecular entity
+18211@CHEBI|citrulline:citrulline
+18243@CHEBI|dopamine:dopamine
+18248@CHEBI|iron atom:iron atom
+33250@CHEBI|atom:atom
+18379@CHEBI|nitrile:nitrile
+18420@CHEBI|magnesium(2+):magnesium(2+)
+18421@CHEBI|superoxide:superoxide
+20060@CHEBI|3-hydroxy fatty acyl-CoA:3-hydroxy fatty acyl-CoA
+61902@CHEBI|hydroxy fatty acyl-CoA:hydroxy fatty acyl-CoA
+21519@CHEBI|N-acetyl-D-glucosamine 1-phosphate:N-acetyl-D-glucosamine 1-phosphate
+22198@CHEBI|acetylcysteine:acetylcysteine
+22251@CHEBI|adenosine bisphosphate:adenosine bisphosphate
+22256@CHEBI|adenosine phosphate:adenosine phosphate
+61078@CHEBI|purine nucleoside bisphosphate:purine nucleoside bisphosphate
+61079@CHEBI|ribonucleoside bisphosphate:ribonucleoside bisphosphate
+25608@CHEBI|nucleoside phosphate:nucleoside phosphate
+61296@CHEBI|adenyl ribonucleotide:adenyl ribonucleotide
+22586@CHEBI|antioxidant:antioxidant
+51086@CHEBI|chemical role:chemical role
+22723@CHEBI|benzoic acids:benzoic acids
+22881@CHEBI|biopterins:biopterins
+26375@CHEBI|pterins:pterins
+22888@CHEBI|biphenyls:biphenyls
+33836@CHEBI|benzenoid aromatic compound:benzenoid aromatic compound
+36820@CHEBI|ring assembly:ring assembly
+64459@CHEBI|biaryl:biaryl
+22984@CHEBI|calcium atom:calcium atom
+23019@CHEBI|carbonyl group:carbonyl group
+24433@CHEBI|group:group
+23053@CHEBI|catechin:catechin
+23367@CHEBI|molecular entity:molecular entity
+24431@CHEBI|chemical entity:chemical entity
+23824@CHEBI|diol:diol
+26191@CHEBI|polyol:polyol
+23888@CHEBI|drug:drug
+52217@CHEBI|pharmaceutical:pharmaceutical
+23924@CHEBI|enzyme inhibitor:enzyme inhibitor
+35222@CHEBI|inhibitor:inhibitor
+52206@CHEBI|biochemical role:biochemical role
+23981@CHEBI|ethanolamines:ethanolamines
+2401@CHEBI|acetophenazine:acetophenazine
+38093@CHEBI|phenothiazines:phenothiazines
+24062@CHEBI|fluorine molecular entity:fluorine molecular entity
+24129@CHEBI|furans:furans
+25693@CHEBI|organic heteromonocyclic compound:organic heteromonocyclic compound
+38104@CHEBI|oxacycle:oxacycle
+24261@CHEBI|glucocorticoid:glucocorticoid
+24432@CHEBI|biological role:biological role
+33675@CHEBI|p-block molecular entity:p-block molecular entity
+24532@CHEBI|organic heterocyclic compound:organic heterocyclic compound
+33832@CHEBI|organic cyclic compound:organic cyclic compound
+5686@CHEBI|heterocyclic compound:heterocyclic compound
+24621@CHEBI|hormone:hormone
+33280@CHEBI|molecular messenger:molecular messenger
+48705@CHEBI|agonist:agonist
+24651@CHEBI|hydroxides:hydroxides
+25806@CHEBI|oxygen molecular entity:oxygen molecular entity
+33608@CHEBI|hydrogen molecular entity:hydrogen molecular entity
+37577@CHEBI|heteroatomic molecular entity:heteroatomic molecular entity
+24669@CHEBI|hydroxy carboxylic acid:hydroxy carboxylic acid
+24833@CHEBI|oxoacid:oxoacid
+25000@CHEBI|lactone:lactone
+33308@CHEBI|carboxylic ester:carboxylic ester
+25016@CHEBI|lead atom:lead atom
+25029@CHEBI|leukotriene:leukotriene
+25351@CHEBI|mevalonic acid:mevalonic acid
+25367@CHEBI|molecule:molecule
+25384@CHEBI|monocarboxylic acid:monocarboxylic acid
+33575@CHEBI|carboxylic acid:carboxylic acid
+61120@CHEBI|nucleobase-containing molecular entity:nucleobase-containing molecular entity
+25681@CHEBI|omega-3 fatty acid:omega-3 fatty acid
+33670@CHEBI|heteromonocyclic compound:heteromonocyclic compound
+26020@CHEBI|phosphate:phosphate
+26079@CHEBI|phosphoric acid derivative:phosphoric acid derivative
+26082@CHEBI|phosphorus molecular entity:phosphorus molecular entity
+25900@CHEBI|aldopentose phosphate:aldopentose phosphate
+35131@CHEBI|aldose phosphate:aldose phosphate
+84055@CHEBI|pentose phosphate:pentose phosphate
+25941@CHEBI|peroxynitrite:peroxynitrite
+36359@CHEBI|phosphorus oxoacid derivative:phosphorus oxoacid derivative
+26167@CHEBI|polar amino acid:polar amino acid
+26208@CHEBI|polyunsaturated fatty acid:polyunsaturated fatty acid
+2627@CHEBI|ambenonium:ambenonium
+26373@CHEBI|pteridines:pteridines
+27171@CHEBI|organic heterobicyclic compound:organic heterobicyclic compound
+33833@CHEBI|heteroarene:heteroarene
+38101@CHEBI|organonitrogen heterocyclic compound:organonitrogen heterocyclic compound
+26395@CHEBI|purine nucleotide:purine nucleotide
+26401@CHEBI|purines:purines
+36976@CHEBI|nucleotide:nucleotide
+26400@CHEBI|purine ribonucleotide:purine ribonucleotide
+26561@CHEBI|ribonucleotide:ribonucleotide
+35875@CHEBI|imidazopyrimidine:imidazopyrimidine
+26536@CHEBI|retinoic acid:retinoic acid
+26562@CHEBI|ribose phosphate:ribose phosphate
+26658@CHEBI|sesquiterpenoid:sesquiterpenoid
+2666@CHEBI|amitriptyline:amitriptyline
+26739@CHEBI|sphingolipid:sphingolipid
+2675@CHEBI|amoxapine:amoxapine
+26764@CHEBI|steroid hormone:steroid hormone
+26806@CHEBI|succinate:succinate
+26816@CHEBI|carbohydrate phosphate:carbohydrate phosphate
+63299@CHEBI|carbohydrate derivative:carbohydrate derivative
+26835@CHEBI|sulfur molecular entity:sulfur molecular entity
+26959@CHEBI|thiocarboxylic ester:thiocarboxylic ester
+26977@CHEBI|thiosulfate:thiosulfate
+33672@CHEBI|heterobicyclic compound:heterobicyclic compound
+38166@CHEBI|organic heteropolycyclic compound:organic heteropolycyclic compound
+27306@CHEBI|vitamin B6:vitamin B6
+27363@CHEBI|zinc atom:zinc atom
+27470@CHEBI|folic acid:folic acid
+27647@CHEBI|prostaglandin G2:prostaglandin G2
+28115@CHEBI|methylcobalamin:methylcobalamin
+28300@CHEBI|glutamine:glutamine
+28411@CHEBI|allicin:allicin
+28694@CHEBI|copper atom:copper atom
+28790@CHEBI|serotonin:serotonin
+28839@CHEBI|3-disulfanyl-L-alanine:3-disulfanyl-L-alanine
+28984@CHEBI|aluminium atom:aluminium atom
+29016@CHEBI|arginine:arginine
+29033@CHEBI|iron(2+):iron(2+)
+29101@CHEBI|sodium(1+):sodium(1+)
+29103@CHEBI|potassium(1+):potassium(1+)
+29105@CHEBI|zinc(2+):zinc(2+)
+29108@CHEBI|calcium(2+):calcium(2+)
+29191@CHEBI|hydroxyl:hydroxyl
+30089@CHEBI|acetate:acetate
+3011@CHEBI|benazepril:benazepril
+30145@CHEBI|lithium atom:lithium atom
+30436@CHEBI|tetrahydropterin:tetrahydropterin
+30879@CHEBI|alcohol:alcohol
+3098@CHEBI|bile acid:bile acid
+31236@CHEBI|aripiprazole:aripiprazole
+31296@CHEBI|Blonanserin:Blonanserin
+31687@CHEBI|idebenone:idebenone
+32168@CHEBI|sulpiride:sulpiride
+32192@CHEBI|tenoxicam:tenoxicam
+32988@CHEBI|amide:amide
+51143@CHEBI|nitrogen molecular entity:nitrogen molecular entity
+33229@CHEBI|vitamin (role):vitamin (role)
+78295@CHEBI|food component:food component
+33232@CHEBI|application:application
+33234@CHEBI|vitamin E:vitamin E
+33241@CHEBI|oxoacid derivative:oxoacid derivative
+33256@CHEBI|primary amide:primary amide
+36962@CHEBI|organochalcogen compound:organochalcogen compound
+36586@CHEBI|carbonyl compound:carbonyl compound
+33447@CHEBI|phospho sugar:phospho sugar
+63367@CHEBI|monosaccharide derivative:monosaccharide derivative
+33567@CHEBI|catecholamine:catecholamine
+33569@CHEBI|noradrenaline:noradrenaline
+35605@CHEBI|carbon oxoacid:carbon oxoacid
+64709@CHEBI|organic acid:organic acid
+33579@CHEBI|main group molecular entity:main group molecular entity
+33595@CHEBI|cyclic compound:cyclic compound
+33597@CHEBI|homocyclic compound:homocyclic compound
+33598@CHEBI|carbocyclic compound:carbocyclic compound
+33674@CHEBI|s-block molecular entity:s-block molecular entity
+33635@CHEBI|polycyclic compound:polycyclic compound
+33636@CHEBI|bicyclic compound:bicyclic compound
+33655@CHEBI|aromatic compound:aromatic compound
+33659@CHEBI|organic aromatic compound:organic aromatic compound
+33661@CHEBI|monocyclic compound:monocyclic compound
+33671@CHEBI|heteropolycyclic compound:heteropolycyclic compound
+33694@CHEBI|biomacromolecule:biomacromolecule
+33697@CHEBI|ribonucleic acid:ribonucleic acid
+3380@CHEBI|captopril:captopril
+33853@CHEBI|phenols:phenols
+3387@CHEBI|carbamazepine:carbamazepine
+35470@CHEBI|central nervous system drug:central nervous system drug
+34706@CHEBI|ergoloid mesylate:ergoloid mesylate
+35358@CHEBI|sulfonamide:sulfonamide
+35469@CHEBI|antidepressant:antidepressant
+35471@CHEBI|psychotropic drug:psychotropic drug
+35472@CHEBI|anti-inflammatory drug:anti-inflammatory drug
+67079@CHEBI|anti-inflammatory agent:anti-inflammatory agent
+35474@CHEBI|anxiolytic drug:anxiolytic drug
+35475@CHEBI|non-steroidal anti-inflammatory drug:non-steroidal anti-inflammatory drug
+3558@CHEBI|cerivastatin:cerivastatin
+87631@CHEBI|statin:statin
+36963@CHEBI|organooxygen compound:organooxygen compound
+3568@CHEBI|cevimeline:cevimeline
+35741@CHEBI|glycerolipid:glycerolipid
+35850@CHEBI|sulfone:sulfone
+36005@CHEBI|docosahexaenoic acid:docosahexaenoic acid
+36009@CHEBI|omega-6 fatty acid:omega-6 fatty acid
+36080@CHEBI|protein:protein
+000000001@PR|protein:protein
+36315@CHEBI|glycerophosphoinositol:glycerophosphoinositol
+37739@CHEBI|glycerophospholipid:glycerophospholipid
+36360@CHEBI|phosphorus oxoacids and derivatives:phosphorus oxoacids and derivatives
+3647@CHEBI|chlorpromazine:chlorpromazine
+3651@CHEBI|chlorprothixene:chlorprothixene
+36587@CHEBI|organic oxo compound:organic oxo compound
+36791@CHEBI|escitalopram:escitalopram
+36796@CHEBI|duloxetine:duloxetine
+3698@CHEBI|cilazapril:cilazapril
+37123@CHEBI|nucleoside bisphosphate:nucleoside bisphosphate
+37143@CHEBI|organofluorine compound:organofluorine compound
+37175@CHEBI|organic hydride:organic hydride
+3723@CHEBI|citalopram:citalopram
+37554@CHEBI|fatty acyl-CoA:fatty acyl-CoA
+61697@CHEBI|fatty acid derivative:fatty acid derivative
+37555@CHEBI|omega-carboxyacyl-CoA:omega-carboxyacyl-CoA
+3756@CHEBI|clonazepam:clonazepam
+37581@CHEBI|gamma-lactone:gamma-lactone
+3766@CHEBI|clozapine:clozapine
+38462@CHEBI|EC 3.1.1.7 (acetylcholinesterase) inhibitor:EC 3.1.1.7 (acetylcholinesterase) inhibitor
+38545@CHEBI|rosuvastatin:rosuvastatin
+38561@CHEBI|fluvastatin:fluvastatin
+60911@CHEBI|racemate:racemate
+38666@CHEBI|(R)-flurbiprofen:(R)-flurbiprofen
+38679@CHEBI|fluorobiphenyl:fluorobiphenyl
+38697@CHEBI|anthocyanin:anthocyanin
+39026@CHEBI|low-density lipoprotein:low-density lipoprotein
+39548@CHEBI|atorvastatin:atorvastatin
+3962@CHEBI|curcumin:curcumin
+40303@CHEBI|lovastatin:lovastatin
+41423@CHEBI|celecoxib:celecoxib
+42944@CHEBI|galanthamine:galanthamine
+4325@CHEBI|dapsone:dapsone
+4353@CHEBI|Decursin:Decursin
+43755@CHEBI|lisinopril:lisinopril
+45951@CHEBI|trifluoperazine:trifluoperazine
+45980@CHEBI|tacrine:tacrine
+4710@CHEBI|doxepin:doxepin
+4717@CHEBI|droperidol:droperidol
+47381@CHEBI|diclofenac:diclofenac
+47499@CHEBI|imipramine:imipramine
+47780@CHEBI|clomipramine:clomipramine
+47781@CHEBI|desipramine:desipramine
+4784@CHEBI|enalapril:enalapril
+48574@CHEBI|phenylbutazone:phenylbutazone
+52210@CHEBI|pharmacological role:pharmacological role
+48706@CHEBI|antagonist:antagonist
+4875@CHEBI|etanercept:etanercept
+4909@CHEBI|etodolac:etodolac
+49552@CHEBI|copper(1+):copper(1+)
+49662@CHEBI|indometacin:indometacin
+49713@CHEBI|lithium(1+):lithium(1+)
+5004@CHEBI|fenoprofen:fenoprofen
+50114@CHEBI|estrogen:estrogen
+50122@CHEBI|rosiglitazone:rosiglitazone
+50169@CHEBI|brexanolone:brexanolone
+50217@CHEBI|selegiline:selegiline
+50523@CHEBI|butenolide:butenolide
+50607@CHEBI|dityrosine:dityrosine
+506227@CHEBI|N-acetyl-D-glucosamine:N-acetyl-D-glucosamine
+50841@CHEBI|loxapine:loxapine
+5103@CHEBI|flumazenil:flumazenil
+51038@CHEBI|minaprine:minaprine
+5118@CHEBI|fluoxetine:fluoxetine
+5123@CHEBI|fluphenazine:fluphenazine
+5128@CHEBI|flurazepam:flurazepam
+5138@CHEBI|fluvoxamine:fluvoxamine
+5163@CHEBI|fosinopril:fosinopril
+52211@CHEBI|physiological role:physiological role
+53289@CHEBI|donepezil:donepezil
+0000210@MAXO|cholinesterase inhibitor therapy:cholinesterase inhibitor therapy
+5417@CHEBI|glucosamine:glucosamine
+5445@CHEBI|glyceraldehyde:glyceraldehyde
+5613@CHEBI|haloperidol:haloperidol
+566274@CHEBI|malonaldehyde:malonaldehyde
+57589@CHEBI|O-acetyl-L-carnitine:O-acetyl-L-carnitine
+57678@CHEBI|3-mercaptopyruvate:3-mercaptopyruvate
+5855@CHEBI|ibuprofen:ibuprofen
+59118@CHEBI|perazine:perazine
+59999@CHEBI|chemical substance:chemical substance
+60004@CHEBI|mixture:mixture
+60027@CHEBI|polymer:polymer
+60169@CHEBI|phosphatidylinositol trisphosphate:phosphatidylinositol trisphosphate
+60425@CHEBI|amyloid fibril:amyloid fibril
+60643@CHEBI|NMDA receptor antagonist:NMDA receptor antagonist
+6128@CHEBI|ketoprofen:ketoprofen
+6129@CHEBI|ketorolac:ketorolac
+61293@CHEBI|adenyl nucleotide:adenyl nucleotide
+62618@CHEBI|hydroxyacyl-CoA:hydroxyacyl-CoA
+61908@CHEBI|nitric oxide synthase inhibitor:nitric oxide synthase inhibitor
+78616@CHEBI|carbohydrates and carbohydrate derivatives:carbohydrates and carbohydrate derivatives
+63409@CHEBI|pentose derivative:pentose derivative
+63618@CHEBI|pravastatin:pravastatin
+63620@CHEBI|rasagiline:rasagiline
+63634@CHEBI|valdecoxib:valdecoxib
+64073@CHEBI|exendin-4:exendin-4
+64312@CHEBI|memantine:memantine
+0000644@MAXO|molecular pathway modifying agent therapy:molecular pathway modifying agent therapy
+64482@CHEBI|phosphatidylcholine:phosphatidylcholine
+64583@CHEBI|sphingomyelin:sphingomyelin
+64645@CHEBI|amyloid-beta:amyloid-beta
+6498@CHEBI|lipoxin A4:lipoxin A4
+6538@CHEBI|Loratadine:Loratadine
+6539@CHEBI|Lorazepam:Lorazepam
+6690@CHEBI|Maprotiline:Maprotiline
+67011@CHEBI|folates:folates
+6710@CHEBI|meclofenamic acid:meclofenamic acid
+6717@CHEBI|mefenamic acid:mefenamic acid
+6741@CHEBI|meloxicam:meloxicam
+6780@CHEBI|mesoridazine:mesoridazine
+6838@CHEBI|methotrimeprazine:methotrimeprazine
+6908@CHEBI|trichlorfon:trichlorfon
+6950@CHEBI|mirtazapine:mirtazapine
+6960@CHEBI|Moexipril:Moexipril
+71193@CHEBI|liraglutide:liraglutide
+71941@CHEBI|tolmetin:tolmetin
+72544@CHEBI|flavonoids:flavonoids
+73044@CHEBI|lumiracoxib:lumiracoxib
+73290@CHEBI|PK-11195:PK-11195
+7443@CHEBI|nabumetone:nabumetone
+7476@CHEBI|naproxen:naproxen
+7477@CHEBI|naproxen sodium:naproxen sodium
+74925@CHEBI|gamma-secretase inhibitor:gamma-secretase inhibitor
+7494@CHEBI|nefazodone:nefazodone
+7514@CHEBI|neostigmine:neostigmine
+7575@CHEBI|nimodipine:nimodipine
+76224@CHEBI|aromatic ketone:aromatic ketone
+7640@CHEBI|nortriptyline:nortriptyline
+7735@CHEBI|olanzapine:olanzapine
+7822@CHEBI|oxaprozin:oxaprozin
+7823@CHEBI|oxazepam:oxazepam
+78330@CHEBI|huperzine A:huperzine A
+78662@CHEBI|2,3-epoxysqualene:2,3-epoxysqualene
+7936@CHEBI|paroxetine:paroxetine
+80161@CHEBI|Galanin:Galanin
+8024@CHEBI|perindopril:perindopril
+80270@CHEBI|Glucagon-like peptide 1:Glucagon-like peptide 1
+8028@CHEBI|perphenazine:perphenazine
+8060@CHEBI|Phenelzine:Phenelzine
+8212@CHEBI|pimozide:pimozide
+8228@CHEBI|pioglitazone:pioglitazone
+8249@CHEBI|piroxicam:piroxicam
+82698@CHEBI|suvorexant:suvorexant
+82978@CHEBI|paliperidone:paliperidone
+83531@CHEBI|moclobemide:moclobemide
+83820@CHEBI|non-proteinogenic amino acid:non-proteinogenic amino acid
+84123@CHEBI|advanced glycation end-product:advanced glycation end-product
+8435@CHEBI|prochlorperazine:prochlorperazine
+8459@CHEBI|promazine:promazine
+8597@CHEBI|protriptyline:protriptyline
+86269@CHEBI|3-nitrotyrosine:3-nitrotyrosine
+8665@CHEBI|Pyridostigmine:Pyridostigmine
+8707@CHEBI|quetiapine:quetiapine
+8713@CHEBI|quinapril:quinapril
+8774@CHEBI|ramipril:ramipril
+88003@CHEBI|fructose 6-phosphate:fructose 6-phosphate
+8871@CHEBI|risperidone:risperidone
+8874@CHEBI|rivastigmine:rivastigmine
+8887@CHEBI|rofecoxib:rofecoxib
+9123@CHEBI|sertraline:sertraline
+9150@CHEBI|simvastatin:simvastatin
+9352@CHEBI|sulindac:sulindac
+9362@CHEBI|suprofen:suprofen
+9435@CHEBI|Temazepam:Temazepam
+9566@CHEBI|thioridazine:thioridazine
+9649@CHEBI|trandolapril:trandolapril
+9652@CHEBI|tranylcypromine:tranylcypromine
+9654@CHEBI|trazodone:trazodone
+9711@CHEBI|triflupromazine:triflupromazine
+9738@CHEBI|trimipramine:trimipramine
+9943@CHEBI|venlafaxine:venlafaxine
+0009015@CLO|SH-SY5Y cell:SH-SY5Y cell
+0000047@CL|neuronal stem cell:neuronal stem cell
+68646@FMA|Cell:Cell
+0000065@CL|ependymal cell:ependymal cell
+0000094@CL|granulocyte:granulocyte
+0000738@CL|leukocyte:leukocyte
+0000099@CL|interneuron:interneuron
+0000540@CL|neuron:neuron
+0000109@CL|adrenergic neuron:adrenergic neuron
+0000117@CL|CNS neuron (sensu Vertebrata):CNS neuron (sensu Vertebrata)
+0000118@CL|basket cell:basket cell
+0000120@CL|granule cell:granule cell
+0000121@CL|Purkinje cell:Purkinje cell
+2000029@CL|central nervous system neuron:central nervous system neuron
+0000125@CL|glial cell:glial cell
+0002319@CL|neural cell:neural cell
+0000127@CL|astrocyte:astrocyte
+0000128@CL|oligodendrocyte:oligodendrocyte
+0000129@CL|microglial cell:microglial cell
+0000235@CL|macrophage:macrophage
+0000542@CL|lymphocyte:lymphocyte
+0000576@CL|monocyte:monocyte
+0000598@CL|pyramidal neuron:pyramidal neuron
+0000617@CL|GABAergic neuron:GABAergic neuron
+0000669@CL|pericyte cell:pericyte cell
+0000679@CL|glutamatergic neuron:glutamatergic neuron
+0000700@CL|dopaminergic neuron:dopaminergic neuron
+0000767@CL|basophil:basophil
+0000771@CL|eosinophil:eosinophil
+0000775@CL|neutrophil:neutrophil
+0000850@CL|serotonergic neuron:serotonergic neuron
+0002573@CL|Schwann cell:Schwann cell
+0002608@CL|hippocampal neuron:hippocampal neuron
+1001474@CL|medium spiny neuron:medium spiny neuron
+0000000@CMO|clinical measurement:clinical measurement
+0000109@IAO|measurement datum:measurement datum
+0000001@CMO|cardiovascular measurement:cardiovascular measurement
+0000023@CMO|blood chemistry measurement:blood chemistry measurement
+0000035@CMO|blood measurement:blood measurement
+0000025@CMO|red blood cell count:red blood cell count|erythrocyte count
+0000036@CMO|blood cell measurement:blood cell measurement
+0000027@CMO|white blood cell count:white blood cell count
+0000227@CMO|cell measurement:cell measurement
+0000105@CMO|body mass index (BMI):body mass index (BMI)
+0000294@CMO|pulse:pulse
+0001240@CMO|cerebrospinal fluid measurement:cerebrospinal fluid measurement
+0000005@CTO|masking design:masking design
+0000030@IAO|information content entity:information content entity
+0000201@CTO|clinical trial phase:clinical trial phase
+0000203@CTO|clinical trial phase 1:clinical trial phase 1
+0000204@CTO|clinical trial phase 2:clinical trial phase 2
+0000205@CTO|clinical trial phase 3:clinical trial phase 3
+0000206@CTO|clinical trial phase 4:clinical trial phase 4
+0000220@CTO|clinical trial:clinical trial
+0000011@OBI|planned process:planned process
+0014667@DOID|disease of metabolism:disease of metabolism
+0000031@OGMS|disease:disease
+0050117@DOID|disease by infectious agent:disease by infectious agent
+0060037@DOID|developmental disorder of mental health:developmental disorder of mental health
+150@DOID|disease of mental health:disease of mental health
+0060038@DOID|specific developmental disorder:specific developmental disorder
+0060040@DOID|pervasive developmental disorder:pervasive developmental disorder
+0060043@DOID|sexual disorder:sexual disorder
+0080832@DOID|mild cognitive impairment:mild cognitive impairment
+1561@DOID|cognitive disorder:cognitive disorder
+1307@DOID|dementia:dementia
+680@DOID|tauopathy:tauopathy
+10763@DOID|hypertension:hypertension
+1287@DOID|cardiovascular system disease:cardiovascular system disease
+10934@DOID|multiple personality disorder:multiple personality disorder
+114@DOID|heart disease:heart disease
+11870@DOID|Pick's disease:Pick's disease
+1289@DOID|neurodegenerative disease:neurodegenerative disease
+12217@DOID|Lewy body dementia:Lewy body dementia
+12858@DOID|Huntington's disease:Huntington's disease
+331@DOID|central nervous system disease:central nervous system disease
+14330@DOID|Parkinson's disease:Parkinson's disease
+1459@DOID|hypothyroidism:hypothyroidism
+1510@DOID|personality disorder:personality disorder
+17@DOID|musculoskeletal system disease:musculoskeletal system disease
+7@DOID|disease of anatomical entity:disease of anatomical entity
+2030@DOID|anxiety disorder:anxiety disorder
+225@DOID|syndrome:syndrome
+2468@DOID|psychotic disorder:psychotic disorder
+302@DOID|substance abuse:substance abuse
+303@DOID|substance-related disorder:substance-related disorder
+863@DOID|nervous system disease:nervous system disease
+3324@DOID|mood disorder:mood disorder
+4029@DOID|gastritis:gastritis
+4737@DOID|somatoform disorder:somatoform disorder
+4752@DOID|multiple system atrophy:multiple system atrophy
+535@DOID|sleep disorder:sleep disorder
+630@DOID|genetic disease:genetic disease
+8725@DOID|vascular dementia:vascular dementia
+9246@DOID|cerebral amyloid angiopathy:cerebral amyloid angiopathy
+9255@DOID|frontotemporal dementia:frontotemporal dementia
+9352@DOID|type 2 diabetes mellitus:type 2 diabetes mellitus
+9970@DOID|obesity:obesity
+00010126@DRON|Isocarboxazid:Isocarboxazid
+00011492@DRON|Remoxipride:Remoxipride
+00012179@DRON|placebo:placebo
+0000047@OBI|processed material:processed material
+00013649@DRON|Isoxsuprine:Isoxsuprine
+00016126@DRON|epigallocatechin gallate:epigallocatechin gallate
+00016940@DRON|Adenosine Triphosphate:Adenosine Triphosphate
+00017167@DRON|Phytic Acid:Phytic Acid
+00817881@DRON|Glucose-6-Phosphate:Glucose-6-Phosphate
+25765@EMAPA|mouse:mouse
+C71164@NCIT|Animal Model:Animal Model
+0000007@ERO|technique:technique
+0000015@ERO|human study:human study
+0000017@ERO|epidemiological study:epidemiological study
+0000357@ERO|single blinded study:single blinded study
+C70840@NCIT|Blinded Clinical Study:Blinded Clinical Study
+0000358@ERO|double blinded study:double blinded study
+0000606@ERO|psychological and behavioral intervention:psychological and behavioral intervention
+0000816@ERO|in vivo bioluminescence imaging system:in vivo bioluminescence imaging system
+0001312@ERO|imaging technique:imaging technique
+0000833@ERO|molecular assay:molecular assay
+0000070@OBI|assay:assay
+0001071@ERO|cerebro-spinal tap:cerebro-spinal tap
+0000659@OBI|specimen collection:specimen collection
+0001285@ERO|organismal assay:organismal assay
+0001292@ERO|physiological assay:physiological assay
+0001330@ERO|neuropsychological testing:neuropsychological testing
+0001351@ERO|single photon emission computed tomography:single photon emission computed tomography
+0001915@ERO|survival:survival
+0000011@OBCS|measurement scale:measurement scale
+0000104@ExO|alcohol consumption:alcohol consumption
+C16795@NCIT|Lifestyle:Lifestyle
+0000109@ExO|race:race
+C19332@NCIT|Personal Attribute:Personal Attribute
+0000132@ExO|African American:African American
+0000133@ExO|Alaska Native:Alaska Native
+0000134@ExO|American Indian:American Indian
+0000135@ExO|Asian:Asian
+0000136@ExO|Asian Indian:Asian Indian
+0000137@ExO|Central or South American:Central or South American
+0000138@ExO|Chicano:Chicano
+0000139@ExO|Chinese:Chinese
+0000140@ExO|Cuban:Cuban
+0000141@ExO|Cuban-American:Cuban-American
+0000142@ExO|Dominican:Dominican
+0000143@ExO|Filipino:Filipino
+0000144@ExO|Guamanian:Guamanian
+0000145@ExO|Hispanic:Hispanic
+0000146@ExO|Inuit:Inuit
+0000147@ExO|Japanese:Japanese
+0000148@ExO|Korean:Korean
+0000149@ExO|Latino:Latino
+0000150@ExO|Mexican:Mexican
+0000151@ExO|Mexican-American:Mexican-American
+0000152@ExO|Native Hawaiian:Native Hawaiian
+0000153@ExO|Other Race:Other Race
+0000154@ExO|Pacific Islander:Pacific Islander
+0000155@ExO|Puerto Rican:Puerto Rican
+0000156@ExO|Samoan:Samoan
+0000157@ExO|Vietnamese:Vietnamese
+0000158@ExO|White:White
+14065@FMA|Organ component:Organ component
+82472@FMA|Cardinal organ part:Cardinal organ part
+241981@FMA|Chemokine:Chemokine
+84050@FMA|Cytokine:Cytokine
+242193@FMA|Region of cerebral cortex:Region of cerebral cortex
+86103@FMA|Region of organ component:Region of organ component
+55652@FMA|Anatomical set:Anatomical set
+67135@FMA|Anatomical structure:Anatomical structure
+61775@FMA|Physical anatomical entity:Physical anatomical entity
+0001062@UBERON|anatomical entity:anatomical entity
+61814@FMA|Neurite:Neurite
+67304@FMA|Cell appendage:Cell appendage
+61900@FMA|Precuneus:Precuneus
+83874@FMA|Gyrus of neuraxis:Gyrus of neuraxis
+61903@FMA|Cuneus:Cuneus
+62007@FMA|Thalamus:Thalamus
+83153@FMA|Organ component of neuraxis:Organ component of neuraxis
+62869@FMA|B lymphocyte:B lymphocyte
+62870@FMA|T lymphocyte:T lymphocyte
+62871@FMA|Immunoglobulin:Immunoglobulin
+62913@FMA|Fibril:Fibril
+0110165@GO|cellular anatomical entity:cellular anatomical entity
+63493@FMA|C1:C1
+C21523@NCIT|Complement Component Protein:Complement Component Protein
+63834@FMA|Cytoskeleton:Cytoskeleton
+0043226@GO|organelle:organelle
+63841@FMA|Plasma membrane:Plasma membrane
+63887@FMA|Biological macromolecule:Biological macromolecule
+66835@FMA|Cytoplasm:Cytoplasm
+66861@FMA|Membrane of mitochondrion:Membrane of mitochondrion
+85549@FMA|Membrane layer of organelle:Membrane layer of organelle
+67165@FMA|Material anatomical entity:Material anatomical entity
+0000061@UBERON|anatomical structure:anatomical structure
+67301@FMA|Cell body:Cell body
+67308@FMA|Axon:Axon
+67314@FMA|Dendrite:Dendrite
+67619@FMA|Organ region:Organ region
+67906@FMA|Protein complex:Protein complex
+80122@FMA|Preganglionic neuron:Preganglionic neuron
+82553@FMA|Ventricle:Ventricle
+0004923@UBERON|organ component layer:organ component layer
+86140@FMA|Organ segment:Organ segment
+84013@FMA|Set of basal ganglia:Set of basal ganglia
+86578@FMA|Interleukin:Interleukin
+86579@FMA|Interleukin-12:Interleukin-12
+00002452@FOODON|invertebrate animal:invertebrate animal
+0000160@FYPO|fragmented DNA:fragmented DNA
+0005622@GO|intracellular anatomical structure:intracellular anatomical structure
+0000060@GECKO|gender:gender
+0000119@GECKO|cognitive measurement:cognitive measurement
+0000134@GECKO|Alzheimer's Disease Assessment Scale score:Alzheimer's Disease Assessment Scale score
+0000135@GECKO|Mini-Mental State Exam score:Mini-Mental State Exam score
+0000137@GECKO|Montreal Cognitive Assessment Test score:Montreal Cognitive Assessment Test score
+0000143@GECKO|Clinical Dementia Rating Scale score:Clinical Dementia Rating Scale score
+0001420@GENEPIO|diagnostic test:diagnostic test
+0000047@GENO|danio rerio gene:danio rerio gene
+0000000002@OGG|gene:gene
+0000492@GENO|mutation:mutation
+0000139@GO|Golgi membrane:Golgi membrane
+0098588@GO|bounding membrane of organelle:bounding membrane of organelle
+0000165@GO|MAPK cascade:MAPK cascade
+0007165@GO|signal transduction:signal transduction
+0000422@GO|autophagy of mitochondrion:autophagy of mitochondrion
+0006914@GO|autophagy:autophagy
+0000423@GO|mitophagy:mitophagy
+0000502@GO|proteasome complex:proteasome complex
+1902494@GO|catalytic complex:catalytic complex
+0001508@GO|action potential:action potential
+0065007@GO|biological regulation:biological regulation
+0001774@GO|microglial cell activation:microglial cell activation
+0009987@GO|cellular process:cellular process
+0002376@GO|immune system process:immune system process
+0008150@GO|biological_process:biological_process
+0005575@GO|cellular_component:cellular_component
+0005577@GO|fibrinogen complex:fibrinogen complex
+0032991@GO|protein-containing complex:protein-containing complex
+0005579@GO|membrane attack complex:membrane attack complex
+0046930@GO|pore complex:pore complex
+0098797@GO|plasma membrane protein complex:plasma membrane protein complex
+0005634@GO|nucleus:nucleus
+0005739@GO|mitochondrion:mitochondrion
+0005764@GO|lysosome:lysosome
+0005773@GO|vacuole:vacuole
+0005768@GO|endosome:endosome
+0005769@GO|early endosome:early endosome
+0005770@GO|late endosome:late endosome
+0005776@GO|autophagosome:autophagosome
+0005783@GO|endoplasmic reticulum:endoplasmic reticulum
+0005794@GO|Golgi apparatus:Golgi apparatus
+0005802@GO|trans-Golgi network:trans-Golgi network
+0031984@GO|organelle subcompartment:organelle subcompartment
+0005874@GO|microtubule:microtubule
+0099080@GO|supramolecular complex:supramolecular complex
+0006099@GO|tricarboxylic acid cycle:tricarboxylic acid cycle
+0044237@GO|cellular metabolic process:cellular metabolic process
+0006260@GO|DNA replication:DNA replication
+0006351@GO|transcription, DNA-templated:transcription, DNA-templated
+0006412@GO|translation:translation
+0006810@GO|transport:transport
+0051179@GO|localization:localization
+0006811@GO|ion transport:ion transport
+0006814@GO|sodium ion transport:sodium ion transport
+0006869@GO|lipid transport:lipid transport
+0006887@GO|exocytosis:exocytosis
+0016192@GO|vesicle-mediated transport:vesicle-mediated transport
+0006897@GO|endocytosis:endocytosis
+0006909@GO|phagocytosis:phagocytosis
+0006935@GO|chemotaxis:chemotaxis
+0006955@GO|immune response:immune response
+0050896@GO|response to stimulus:response to stimulus
+0007009@GO|plasma membrane organization:plasma membrane organization
+0007154@GO|cell communication:cell communication
+0007155@GO|cell adhesion:cell adhesion
+0022610@GO|biological adhesion:biological adhesion
+0007219@GO|Notch signaling pathway:Notch signaling pathway
+0007268@GO|chemical synaptic transmission:chemical synaptic transmission
+0007610@GO|behavior:behavior
+0000060@OGMS|bodily process:bodily process
+0008021@GO|synaptic vesicle:synaptic vesicle
+0008152@GO|metabolic process:metabolic process
+0008219@GO|cell death:cell death
+0009056@GO|catabolic process:catabolic process
+0010008@GO|endosome membrane:endosome membrane
+0030659@GO|cytoplasmic vesicle membrane:cytoplasmic vesicle membrane
+0010468@GO|regulation of gene expression:regulation of gene expression
+0012506@GO|vesicle membrane:vesicle membrane
+0031090@GO|organelle membrane:organelle membrane
+0014069@GO|postsynaptic density:postsynaptic density
+0015914@GO|phospholipid transport:phospholipid transport
+0016020@GO|membrane:membrane
+0016234@GO|inclusion body:inclusion body
+0016310@GO|phosphorylation:phosphorylation
+0016311@GO|dephosphorylation:dephosphorylation
+0016925@GO|protein sumoylation:protein sumoylation
+0018377@GO|protein myristoylation:protein myristoylation
+0019722@GO|calcium-mediated signaling:calcium-mediated signaling
+0022402@GO|cell cycle process:cell cycle process
+0022403@GO|cell cycle phase:cell cycle phase
+0044848@GO|biological phase:biological phase
+0023052@GO|signaling:signaling
+0030054@GO|cell junction:cell junction
+0030312@GO|external encapsulating structure:external encapsulating structure
+0030426@GO|growth cone:growth cone
+0030427@GO|site of polarized growth:site of polarized growth
+0031012@GO|extracellular matrix:extracellular matrix
+0031965@GO|nuclear membrane:nuclear membrane
+0031966@GO|mitochondrial membrane:mitochondrial membrane
+0032259@GO|methylation:methylation
+0032809@GO|neuronal cell body membrane:neuronal cell body membrane
+0032993@GO|protein-DNA complex:protein-DNA complex
+0033268@GO|node of Ranvier:node of Ranvier
+0035255@GO|ionotropic glutamate receptor binding:ionotropic glutamate receptor binding
+0036211@GO|protein modification process:protein modification process
+0036465@GO|synaptic vesicle recycling:synaptic vesicle recycling
+0038179@GO|neurotrophin signaling pathway:neurotrophin signaling pathway
+0000001@PW|pathway:pathway
+0042118@GO|endothelial cell activation:endothelial cell activation
+0042552@GO|myelination:myelination
+0042995@GO|cell projection:cell projection
+0043005@GO|neuron projection:neuron projection
+0043197@GO|dendritic spine:dendritic spine
+0044309@GO|neuron spine:neuron spine
+0098794@GO|postsynapse:postsynapse
+0043209@GO|myelin sheath:myelin sheath
+0043687@GO|post-translational protein modification:post-translational protein modification
+0044295@GO|axonal growth cone:axonal growth cone
+0044419@GO|biological process involved in interspecies interaction between organisms:biological process involved in interspecies interaction between organisms
+0045121@GO|membrane raft:membrane raft
+0098857@GO|membrane microdomain:membrane microdomain
+0045202@GO|synapse:synapse
+0098796@GO|membrane protein complex:membrane protein complex
+0048143@GO|astrocyte activation:astrocyte activation
+0051169@GO|nuclear transport:nuclear transport
+0051607@GO|defense response to virus:defense response to virus
+0051707@GO|response to other organism:response to other organism
+0051923@GO|sulfation:sulfation
+0055085@GO|transmembrane transport:transmembrane transport
+0061702@GO|inflammasome complex:inflammasome complex
+0070085@GO|glycosylation:glycosylation
+0000543@MOP|molecular process:molecular process
+0070382@GO|exocytic vesicle:exocytic vesicle
+0070782@GO|phosphatidylserine exposure on apoptotic cell surface:phosphatidylserine exposure on apoptotic cell surface
+0070988@GO|demethylation:demethylation
+0070997@GO|neuron death:neuron death
+0071805@GO|potassium ion transmembrane transport:potassium ion transmembrane transport
+0097242@GO|amyloid-beta clearance:amyloid-beta clearance
+0097354@GO|prenylation:prenylation
+0097413@GO|Lewy body:Lewy body
+0098930@GO|axonal transport:axonal transport
+0099572@GO|postsynaptic specialization:postsynaptic specialization
+0501@MI|enzyme:enzyme
+1902988@GO|neurofibrillary tangle assembly:neurofibrillary tangle assembly
+1904659@GO|glucose transmembrane transport:glucose transmembrane transport
+1990777@GO|lipoprotein particle:lipoprotein particle
+1990851@GO|Wnt-Frizzled-LRP5/6 complex:Wnt-Frizzled-LRP5/6 complex
+000252@GSSO|behavioral therapy:behavioral therapy
+0000112@OGMS|therapeutic procedure:therapeutic procedure
+000660@GSSO|case report:case report
+005860@GSSO|model:model
+006835@GSSO|crude death rate:crude death rate
+0000161@PATO|rate:rate
+0000118@HP|Phenotypic abnormality:Phenotypic abnormality
+0000707@HP|Abnormality of the nervous system:Abnormality of the nervous system
+0000741@HP|Apathy:Apathy
+0012638@HP|Abnormal nervous system physiology:Abnormal nervous system physiology
+0000751@HP|Personality changes:Personality changes
+0002013@HP|Vomiting:Vomiting
+0000459@SYMP|digestive system symptom:digestive system symptom
+0002180@HP|Neurodegeneration:Neurodegeneration
+0002185@HP|Neurofibrillary tangles:Neurofibrillary tangles
+0002186@HP|Apraxia:Apraxia
+0002381@HP|Aphasia:Aphasia
+0007354@HP|Amyotrophic lateral sclerosis:Amyotrophic lateral sclerosis
+0010978@HP|Abnormality of immune system physiology:Abnormality of immune system physiology
+0012393@HP|Allergy:Allergy
+0031249@HP|Parageusia:Parageusia
+0032316@HP|Family history:Family history
+0000015@OGMS|clinical history:clinical history
+0032443@HP|Past medical history:Past medical history
+0033429@HP|Neuroinflammation:Neuroinflammation
+0000027@IAO|data item:data item
+0000288@ICO|pregnant woman:pregnant woman
+0000016@MF|human being:human being
+0000373@IDOMAL|receptor:receptor
+0000581@IDOMAL|C3b:C3b
+0000816@IDOMAL|activation-induced cell death:activation-induced cell death
+0001219@IDOMAL|monkey:monkey
+0000007@INO|up-regulation:up-regulation
+0000157@INO|regulation:regulation
+0000027@INO|cell-cell interaction:cell-cell interaction
+0000032@INO|regulation of transcription:regulation of transcription
+0000093@INO|down-regulation:down-regulation
+0000142@INO|oxidation:oxidation
+0414@MI|enzymatic reaction:enzymatic reaction
+0000176@INO|translocation:translocation
+0000003@MAXO|diagnostic procedure:diagnostic procedure
+0000002@OAE|medical intervention:medical intervention
+0000058@MAXO|pharmacotherapy:pharmacotherapy
+0000171@MAXO|antidementia agent therapy:antidementia agent therapy
+0000181@MAXO|cardiovascular agent therapy:cardiovascular agent therapy
+0000648@MAXO|enzyme inhibitor agent therapy:enzyme inhibitor agent therapy
+0000487@MAXO|clinical assessment:clinical assessment
+0000652@MAXO|ACE inhibitor therapy:ACE inhibitor therapy
+0000655@MAXO|ACE 1 inhibitor therapy:ACE 1 inhibitor therapy
+0000656@MAXO|ACE 2 inhibitor therapy:ACE 2 inhibitor therapy
+0000739@MAXO|HMG-CoA reductase inhibitor therapy:HMG-CoA reductase inhibitor therapy
+0000024@MFOMD|pathological mental process:pathological mental process
+0000061@OGMS|pathological bodily process:pathological bodily process
+0000008@MF|cognitive process:cognitive process
+0000020@MF|mental process:mental process
+0000033@MF|mental disposition:mental disposition
+0210@MI|hydroxylation reaction:hydroxylation reaction
+0216@MI|palmitoylation reaction:palmitoylation reaction
+1140@MI|decarboxylation reaction:decarboxylation reaction
+0000000@MMO|measurement method:measurement method
+0000129@MMO|positron emission tomography (PET):positron emission tomography (PET)
+0000534@MMO|mass spectrometry:mass spectrometry
+00719@MOD|L-methionine sulfoxide:L-methionine sulfoxide
+0000839@MONDO|congenital abnormality:congenital abnormality
+0002046@MONDO|alcohol abuse:alcohol abuse
+0002251@MONDO|hepatitis:hepatitis
+0004335@MONDO|digestive system disease:digestive system disease
+0005151@MONDO|endocrine system disease:endocrine system disease
+0024505@MONDO|disorder by anatomical region:disorder by anatomical region
+0005015@MONDO|diabetes mellitus (disease):diabetes mellitus (disease)
+0007088@MONDO|Alzheimer disease type 1:Alzheimer disease type 1
+0015140@MONDO|early-onset autosomal dominant Alzheimer disease:early-onset autosomal dominant Alzheimer disease
+0007089@MONDO|Alzheimer disease 2:Alzheimer disease 2
+0100087@MONDO|familial Alzheimer disease:familial Alzheimer disease
+0010022@MONDO|senile plaque formation:senile plaque formation
+596@MPATH|pathological process:pathological process
+0010422@MONDO|Alzheimer disease 16:Alzheimer disease 16
+0010783@MONDO|Alzheimer disease, susceptibility to, mitochondrial:Alzheimer disease, susceptibility to, mitochondrial
+0011194@MONDO|Alzheimer disease 5:Alzheimer disease 5
+0011401@MONDO|Alzheimer disease without neurofibrillary tangles:Alzheimer disease without neurofibrillary tangles
+0011513@MONDO|Alzheimer disease, familial early-onset, with coexisting amyloid and prion pathology:Alzheimer disease, familial early-onset, with coexisting amyloid and prion pathology
+0011561@MONDO|Alzheimer disease 6:Alzheimer disease 6
+0011647@MONDO|Alzheimer disease 7:Alzheimer disease 7
+0011743@MONDO|Alzheimer disease 4:Alzheimer disease 4
+0011777@MONDO|Alzheimer disease 8:Alzheimer disease 8
+0011913@MONDO|Alzheimer disease 3:Alzheimer disease 3
+0012321@MONDO|Alzheimer disease 10:Alzheimer disease 10
+0012344@MONDO|Alzheimer disease 11:Alzheimer disease 11
+0012609@MONDO|Alzheimer disease 12:Alzheimer disease 12
+0012630@MONDO|Alzheimer disease 13:Alzheimer disease 13
+0012631@MONDO|Alzheimer disease 14:Alzheimer disease 14
+0014036@MONDO|Alzheimer disease 17:Alzheimer disease 17
+0014265@MONDO|Alzheimer disease 18:Alzheimer disease 18
+0014316@MONDO|Alzheimer disease 19:Alzheimer disease 19
+0018696@MONDO|corticobasal syndrome:corticobasal syndrome
+0022880@MONDO|corticobasal degeneration:corticobasal degeneration
+0100088@MONDO|late-onset familial alzheimer disease:late-onset familial alzheimer disease
+0000030@MOP|acetylation:acetylation
+0000779@MOP|formation of covalent bond:formation of covalent bond
+0000604@MOP|metal chelation:metal chelation
+0000651@MOP|deamination:deamination
+0001030@MOP|deacetylation:deacetylation
+0001494@MOP|decarbonylation:decarbonylation
+127@MPATH|atrophy:atrophy
+3@MPATH|apoptosis:apoptosis
+0000921@MP|demyelination:demyelination
+0001864@MP|vascular inflammation:vascular inflammation
+0003674@MP|oxidative stress:oxidative stress
+0005331@MP|insulin resistance:insulin resistance
+0000473@SYMP|nutrition, metabolism, and development symptom:nutrition, metabolism, and development symptom
+0012232@MP|abnormal ceramide level:abnormal ceramide level
+0000003@NBO|emotional behavior:emotional behavior
+0000313@NBO|behavior process:behavior process
+0000119@NBO|impulsive behavior:impulsive behavior
+0000607@NBO|cognitive behavior:cognitive behavior
+0001845@NBO|consumption behavior:consumption behavior
+0002086@NBO|nicotine consumption:nicotine consumption
+1@NCBITaxon|root:root
+10114@NCBITaxon|Rattus:Rattus
+131567@NCBITaxon|cellular organisms:cellular organisms
+136217@NCBITaxon|Curcuma longa:Curcuma longa
+1407750@NCBITaxon|herbal medicine:herbal medicine
+0000090@OGMS|treatment:treatment
+2759@NCBITaxon|Eukaryota:Eukaryota
+3311@NCBITaxon|Ginkgo biloba:Ginkgo biloba
+39169@NCBITaxon|Lavandula:Lavandula
+40674@NCBITaxon|Mammalia:Mammalia
+7742@NCBITaxon|Vertebrata <vertebrates>:Vertebrata <vertebrates>
+6239@NCBITaxon|Caenorhabditis elegans:Caenorhabditis elegans
+7215@NCBITaxon|Drosophila <flies,genus>:Drosophila <flies,genus>
+7955@NCBITaxon|Danio rerio:Danio rerio
+9606@NCBITaxon|Homo sapiens:Homo sapiens
+C100762@NCIT|Alzheimer's Disease Assessment Scale-Cognitive CDISC Version Questionnaire:Alzheimer's Disease Assessment Scale-Cognitive CDISC Version Questionnaire
+C91105@NCIT|Clinical or Research Assessment Questionnaire:Clinical or Research Assessment Questionnaire
+C102114@NCIT|Clinical Dementia Rating Questionnaire:Clinical Dementia Rating Questionnaire
+C103400@NCIT|FDG-Positron Emission Tomography:FDG-Positron Emission Tomography
+C105165@NCIT|Disability Assessment for Dementia Questionnaire:Disability Assessment for Dementia Questionnaire
+C105166@NCIT|Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory Questionnaire:Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory Questionnaire
+C106697@NCIT|Geriatric Depression Scale Questionnaire:Geriatric Depression Scale Questionnaire
+C106888@NCIT|Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory Mild Cognitive Impairment Questionnaire:Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory Mild Cognitive Impairment Questionnaire
+C111794@NCIT|Notch Receptor Intracellular Domain:Notch Receptor Intracellular Domain
+C116450@NCIT|Arterial Spin Labeling Magnetic Resonance Imaging:Arterial Spin Labeling Magnetic Resonance Imaging
+C16809@NCIT|Magnetic Resonance Imaging:Magnetic Resonance Imaging
+C117960@NCIT|Diagnostic Criteria:Diagnostic Criteria
+0000073@OGMS|diagnosis:diagnosis
+C117997@NCIT|Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification:Extrapyramidal Symptom Rating Scale-Abbreviated Clinical Classification
+C20993@NCIT|Research or Clinical Assessment Tool:Research or Clinical Assessment Tool
+C118457@NCIT|N-Methyl-D-Aspartate Receptor:N-Methyl-D-Aspartate Receptor
+C118892@NCIT|FOXO Family:FOXO Family
+C20130@NCIT|Protein Family:Protein Family
+C1192@NCIT|Phosphatidylinositol 4,5-bisphosphate:Phosphatidylinositol 4,5-bisphosphate
+C120257@NCIT|California Verbal Learning Test - Second Edition:California Verbal Learning Test - Second Edition
+C123667@NCIT|Montreal Cognitive Assessment Functional Test:Montreal Cognitive Assessment Functional Test
+C123668@NCIT|Rey Auditory Verbal Learning Functional Test:Rey Auditory Verbal Learning Functional Test
+C12534@NCIT|Non-Granular Leukocyte:Non-Granular Leukocyte
+C125410@NCIT|Have Difficulty Swallowing:Have Difficulty Swallowing
+C91102@NCIT|Clinical or Research Assessment Question:Clinical or Research Assessment Question
+C125913@NCIT|Have Indigestion:Have Indigestion
+C129326@NCIT|Resting State Functional Connectivity Magnetic Resonance Imaging:Resting State Functional Connectivity Magnetic Resonance Imaging
+C129646@NCIT|Vascular Endothelial Growth Factor Family:Vascular Endothelial Growth Factor Family
+C131258@NCIT|MT-RNR2 Gene:MT-RNR2 Gene
+2110009606@OGG|RNA gene of Homo sapiens:RNA gene of Homo sapiens
+C137847@NCIT|Current Difficulty Learning New Tasks or Instructions:Current Difficulty Learning New Tasks or Instructions
+C14211@NCIT|Guinea Pig:Guinea Pig
+C143955@NCIT|Blood Inflammatory Marker:Blood Inflammatory Marker
+0000446@OPMI|immune biomarker:immune biomarker
+C150129@NCIT|Circulating Protein:Circulating Protein
+C20031@NCIT|Extracellular Protein:Extracellular Protein
+C15206@NCIT|Clinical Study:Clinical Study
+C15262@NCIT|Immunotherapy:Immunotherapy
+C15273@NCIT|Longitudinal Study:Longitudinal Study
+C15327@NCIT|Lumbar Puncture:Lumbar Puncture
+C15362@NCIT|Case Study:Case Study
+C157012@NCIT|Cognition Clock Test:Cognition Clock Test
+C15709@NCIT|Genetic Testing:Genetic Testing
+C15719@NCIT|Surveillance:Surveillance
+C160587@NCIT|Executive Function Disorder:Executive Function Disorder
+C16436@NCIT|Chromogranin:Chromogranin
+C1746@NCIT|Peptide Hormone:Peptide Hormone
+C16502@NCIT|Diagnostic Imaging:Diagnostic Imaging
+C16518@NCIT|DNA Binding Protein:DNA Binding Protein
+C16631@NCIT|Genotype:Genotype
+C166444@NCIT|Aducanumab:Aducanumab
+C16672@NCIT|Heat Shock Protein:Heat Shock Protein
+C16811@NCIT|Magnetoencephalography:Magnetoencephalography
+C16861@NCIT|Microtubule Associated Protein:Microtubule Associated Protein
+C16866@NCIT|Model:Model
+C17204@NCIT|Computed Tomography:Computed Tomography
+C174447@NCIT|Study Arm:Study Arm
+0500000@OBI|study design:study design
+C17456@NCIT|Experimental Model:Experimental Model
+C80519@NCIT|Biological Model:Biological Model
+C17486@NCIT|CCAAT Enhancer Binding Protein:CCAAT Enhancer Binding Protein
+C176261@NCIT|Study Phase:Study Phase
+C176312@NCIT|Phosphorylated Tau Protein to Amyloid Beta1-42 Ratio Measurement:Phosphorylated Tau Protein to Amyloid Beta1-42 Ratio Measurement
+C17710@NCIT|Subcellular Process:Subcellular Process
+C17765@NCIT|Heat Shock Protein 70:Heat Shock Protein 70
+C17958@NCIT|Functional Magnetic Resonance Imaging:Functional Magnetic Resonance Imaging
+C19609@NCIT|Functional Imaging:Functional Imaging
+C18103@NCIT|Protein Synthesis:Protein Synthesis
+C18153@NCIT|Caspase:Caspase
+C18520@NCIT|Metabolic Marker:Metabolic Marker
+0000445@OPMI|biomarker:biomarker
+C19148@NCIT|In Vivo Model:In Vivo Model
+C19272@NCIT|Transgenic Model:Transgenic Model
+C20080@NCIT|Angiography:Angiography
+C38101@NCIT|X-Ray Imaging:X-Ray Imaging
+C2020@NCIT|Farnesyl Transferase Inhibitor:Farnesyl Transferase Inhibitor
+C20391@NCIT|Neurotrophic Factor:Neurotrophic Factor
+C20424@NCIT|Growth Factor:Growth Factor
+C21051@NCIT|Epigenetic Process:Epigenetic Process
+C21097@NCIT|Sedation:Sedation
+C21217@NCIT|Synuclein Family:Synuclein Family
+0003158@OMIT|Blood Proteins:Blood Proteins
+C25214@NCIT|Evaluation:Evaluation
+C25506@NCIT|Factor:Factor
+C25662@NCIT|Sampling:Sampling
+0000094@OBI|material processing:material processing
+C3399@NCIT|Swelling:Swelling
+0000567@SYMP|general symptom:general symptom
+C34660@NCIT|Head Injury:Head Injury
+0000045@OGMS|disorder:disorder
+C38834@NCIT|MAPK Signaling Pathway:MAPK Signaling Pathway
+C40438@NCIT|Beck Depression Inventory:Beck Depression Inventory
+C41189@NCIT|Study Subject:Study Subject
+C46079@NCIT|Randomized Controlled Clinical Trial:Randomized Controlled Clinical Trial
+C46084@NCIT|Memory Dysfunction:Memory Dysfunction
+C463@NCIT|Eicosanoid:Eicosanoid
+C48202@NCIT|Nested Case-control Study:Nested Case-control Study
+C48261@NCIT|Screening:Screening
+C49159@NCIT|Proportion:Proportion
+0000001@OBCS|statistical data analysis:statistical data analysis
+C49686@NCIT|Phase IIa Trial:Phase IIa Trial
+C70820@NCIT|Clinical Study by Phase:Clinical Study by Phase
+C49688@NCIT|Phase IIb Trial:Phase IIb Trial
+C53360@NCIT|Age-Adjusted Mortality Rate:Age-Adjusted Mortality Rate
+0000231@OBCS|mortality rate:mortality rate
+C54721@NCIT|Phase 0 Trial:Phase 0 Trial
+C62716@NCIT|Wide Range Achievement Test, 3rd Edition:Wide Range Achievement Test, 3rd Edition
+C67360@NCIT|Attributable Risk:Attributable Risk
+C74611@NCIT|Erythrocyte Sedimentation Rate Measurement:Erythrocyte Sedimentation Rate Measurement
+C74982@NCIT|Mini-Mental Status Exam:Mini-Mental Status Exam
+C76786@NCIT|Tramiprosate:Tramiprosate
+C78757@NCIT|Latrepirdine:Latrepirdine
+C79569@NCIT|Bapineuzumab:Bapineuzumab
+C81115@NCIT|Semagacestat:Semagacestat
+C84809@NCIT|Beta Amyloid 42 Measurement:Beta Amyloid 42 Measurement
+C84810@NCIT|Tau Protein Measurement:Tau Protein Measurement
+C84812@NCIT|Phosphorylated Tau Protein Measurement:Phosphorylated Tau Protein Measurement
+C86983@NCIT|NINCDS-ADRDA Criteria for Alzheimer's Disease:NINCDS-ADRDA Criteria for Alzheimer's Disease
+C88419@NCIT|Executive Function:Executive Function
+C93150@NCIT|Hazard Ratio:Hazard Ratio
+C93228@NCIT|Retrospective Cohort Study:Retrospective Cohort Study
+C95114@NCIT|Gamma Secretase:Gamma Secretase
+C97201@NCIT|Dimerization:Dimerization
+C98241@NCIT|Thiazolidinedione Antidiabetic Agent:Thiazolidinedione Antidiabetic Agent
+C98772@NCIT|Primary Outcome Measure:Primary Outcome Measure
+C98781@NCIT|Secondary Outcome Measure:Secondary Outcome Measure
+0000001@OAE|adverse event:adverse event
+0001011@OAE|adverse drug effect:adverse drug effect
+0001551@OAE|brain AE:brain AE
+0000141@OBA|synaptic plasticity:synaptic plasticity
+0200000@OBI|data transformation:data transformation
+0000048@OBCS|absolute risk:absolute risk
+0000220@OBCS|derived data from inferential statistical analysis:derived data from inferential statistical analysis
+0000052@OBCS|Incidence rate:Incidence rate
+0000055@OBCS|prevalence rate:prevalence rate
+0000056@OBCS|relative risk:relative risk
+0000103@OBCS|mann-whitney U test:mann-whitney U test
+0000150@OBCS|standardized mortality ratio:standardized mortality ratio
+0000040@OBI|drug role:drug role
+0000181@OBI|population:population
+0000278@OBI|disease stage:disease stage
+0000673@OBI|statistical hypothesis test:statistical hypothesis test
+0000739@OBI|Student's t-test:Student's t-test
+0000931@OBI|study intervention:study intervention
+0200200@OBI|chi square test:chi square test
+0500026@OBI|eligibility criterion:eligibility criterion
+0500027@OBI|inclusion criterion:inclusion criterion
+0500028@OBI|exclusion criterion:exclusion criterion
+0000000031@OGG|RNA gene:RNA gene
+2000009606@OGG|gene of Homo sapiens:gene of Homo sapiens
+2060009606@OGG|protein-coding gene of Homo sapiens:protein-coding gene of Homo sapiens
+2070009606@OGG|pseudo gene of Homo sapiens:pseudo gene of Homo sapiens
+2260009606@OGG|gene of Homo sapiens with unknown gene disposition:gene of Homo sapiens with unknown gene disposition
+3000000002@OGG|A2M:A2M
+3000000019@OGG|ABCA1:ABCA1
+3000000043@OGG|ACHE:ACHE
+3000000048@OGG|ACO1:ACO1
+3000000058@OGG|ACTA1:ACTA1
+3000000156@OGG|ADRBK1:ADRBK1
+3000000177@OGG|AGER:AGER
+3000000207@OGG|AKT1:AKT1
+3000000213@OGG|ALB:ALB
+3000000217@OGG|ALDH2:ALDH2
+3000000240@OGG|ALOX5:ALOX5
+3000000274@OGG|BIN1:BIN1
+3000000317@OGG|APAF1:APAF1
+3000000320@OGG|APBA1:APBA1
+3000000322@OGG|APBB1:APBB1
+3000000324@OGG|APC:APC
+3000000327@OGG|APEH:APEH
+3000000328@OGG|APEX1:APEX1
+3000000333@OGG|APLP1:APLP1
+3000000334@OGG|APLP2:APLP2
+3000000341@OGG|APOC1:APOC1
+3000000346@OGG|APOC4:APOC4
+3000000348@OGG|APOE:APOE
+3000007436@OGG|VLDLR:VLDLR
+3000000351@OGG|APP:APP
+3000006653@OGG|SORL1:SORL1
+3000000355@OGG|FAS:FAS
+3000000387@OGG|RHOA:RHOA
+3000000487@OGG|ATP2A1:ATP2A1
+3000000572@OGG|BAD:BAD
+3000000573@OGG|BAG1:BAG1
+3000000581@OGG|BAX:BAX
+3000000590@OGG|BCHE:BCHE
+3000000595@OGG|CCND1:CCND1
+3000000596@OGG|BCL2:BCL2
+3000000598@OGG|BCL2L1:BCL2L1
+3000000627@OGG|BDNF:BDNF
+3000000637@OGG|BID:BID
+3000000643@OGG|CXCR5:CXCR5
+3000000717@OGG|C2:C2
+3000000718@OGG|C3:C3
+3000000729@OGG|C6:C6
+3000000730@OGG|C7:C7
+3000000759@OGG|CA1:CA1
+3000000801@OGG|CALM1:CALM1
+3000000805@OGG|CALM2:CALM2
+3000000824@OGG|CAPN2:CAPN2
+3000000834@OGG|CASP1:CASP1
+3000000835@OGG|CASP2:CASP2
+3000000836@OGG|CASP3:CASP3
+3000000839@OGG|CASP6:CASP6
+3000000840@OGG|CASP7:CASP7
+3000000841@OGG|CASP8:CASP8
+3000000842@OGG|CASP9:CASP9
+3000000847@OGG|CAT:CAT
+3000000857@OGG|CAV1:CAV1
+3000000875@OGG|CBS:CBS
+3000000890@OGG|CCNA2:CCNA2
+3000000891@OGG|CCNB1:CCNB1
+3000000898@OGG|CCNE1:CCNE1
+3000000915@OGG|CD3D:CD3D
+3000000916@OGG|CD3E:CD3E
+3000000917@OGG|CD3G:CD3G
+3000000919@OGG|CD247:CD247
+3000000920@OGG|CD4:CD4
+3000000929@OGG|CD14:CD14
+3000000945@OGG|CD33:CD33
+3000000948@OGG|CD36:CD36
+3000000983@OGG|CDK1:CDK1
+3000000998@OGG|CDC42:CDC42
+3000001000@OGG|CDH2:CDH2
+3000001019@OGG|CDK4:CDK4
+3000001020@OGG|CDK5:CDK5
+3000001026@OGG|CDKN1A:CDKN1A
+3000001029@OGG|CDKN2A:CDKN2A
+3000001036@OGG|CDO1:CDO1
+3000001071@OGG|CETP:CETP
+3000001128@OGG|CHRM1:CHRM1
+3000001137@OGG|CHRNA4:CHRNA4
+3000001139@OGG|CHRNA7:CHRNA7
+3000001141@OGG|CHRNB2:CHRNB2
+3000001143@OGG|CHRNB4:CHRNB4
+3000001191@OGG|CLU:CLU
+3000001230@OGG|CCR1:CCR1
+3000001232@OGG|CCR3:CCR3
+3000001233@OGG|CCR4:CCR4
+3000001234@OGG|CCR5:CCR5
+3000001235@OGG|CCR6:CCR6
+3000001236@OGG|CCR7:CCR7
+3000001237@OGG|CCR8:CCR8
+3000001267@OGG|CNP:CNP
+3000001378@OGG|CR1:CR1
+3000001385@OGG|CREB1:CREB1
+3000001400@OGG|CRMP1:CRMP1
+3000001432@OGG|MAPK14:MAPK14
+3000001434@OGG|CSE1L:CSE1L
+3000001435@OGG|CSF1:CSF1
+3000001444@OGG|CSHL1:CSHL1
+3000001452@OGG|CSNK1A1:CSNK1A1
+3000001471@OGG|CST3:CST3
+3000001491@OGG|CTH:CTH
+3000001499@OGG|CTNNB1:CTNNB1
+3000001520@OGG|CTSS:CTSS
+3000001588@OGG|CYP19A1:CYP19A1
+3000001600@OGG|DAB1:DAB1
+3000001612@OGG|DAPK1:DAPK1
+3000001636@OGG|ACE:ACE
+3000001742@OGG|DLG4:DLG4
+3000001761@OGG|DMRT1:DMRT1
+3000001808@OGG|DPYSL2:DPYSL2
+3000001809@OGG|DPYSL3:DPYSL3
+3000001855@OGG|DVL1:DVL1
+3000001859@OGG|DYRK1A:DYRK1A
+3000001889@OGG|ECE1:ECE1
+3000001906@OGG|EDN1:EDN1
+3000001950@OGG|EGF:EGF
+3000001956@OGG|EGFR:EGFR
+3000001978@OGG|EIF4EBP1:EIF4EBP1
+3000002041@OGG|EPHA1:EPHA1
+3000002081@OGG|ERN1:ERN1
+3000002099@OGG|ESR1:ESR1
+3000002185@OGG|PTK2B:PTK2B
+3000002222@OGG|FDFT1:FDFT1
+3000002224@OGG|FDPS:FDPS
+3000002308@OGG|FOXO1:FOXO1
+3000002332@OGG|FMR1:FMR1
+3000002339@OGG|FNTA:FNTA
+3000002475@OGG|MTOR:MTOR
+3000002512@OGG|FTL:FTL
+3000002534@OGG|FYN:FYN
+3000002587@OGG|GALR1:GALR1
+3000002597@OGG|GAPDH:GAPDH
+3000002619@OGG|GAS1:GAS1
+3000002664@OGG|GDI1:GDI1
+3000002665@OGG|GDI2:GDI2
+3000002670@OGG|GFAP:GFAP
+3000002673@OGG|GFPT1:GFPT1
+3000002720@OGG|GLB1:GLB1
+3000002776@OGG|GNAQ:GNAQ
+3000002805@OGG|GOT1:GOT1
+3000002806@OGG|GOT2:GOT2
+3000002821@OGG|GPI:GPI
+3000002833@OGG|CXCR3:CXCR3
+3000002876@OGG|GPX1:GPX1
+3000002896@OGG|GRN:GRN
+3000002903@OGG|GRIN2A:GRIN2A
+3000002904@OGG|GRIN2B:GRIN2B
+3000002908@OGG|NR3C1:NR3C1
+3000002919@OGG|CXCL1:CXCL1
+3000002931@OGG|GSK3A:GSK3A
+3000002932@OGG|GSK3B:GSK3B
+3000002936@OGG|GSR:GSR
+3000002997@OGG|GYS1:GYS1
+3000003028@OGG|HSD17B10:HSD17B10
+3000003064@OGG|HTT:HTT
+3000003084@OGG|NRG1:NRG1
+3000003091@OGG|HIF1A:HIF1A
+3000003127@OGG|HLA-DRB5:HLA-DRB5
+3000003146@OGG|HMGB1:HMGB1
+3000003156@OGG|HMGCR:HMGCR
+3000003162@OGG|HMOX1:HMOX1
+3000003304@OGG|HSPA1B:HSPA1B
+3000003309@OGG|HSPA5:HSPA5
+3000003329@OGG|HSPD1:HSPD1
+3000003383@OGG|ICAM1:ICAM1
+3000003416@OGG|IDE:IDE
+3000003458@OGG|IFNG:IFNG
+3000003479@OGG|IGF1:IGF1
+3000003480@OGG|IGF1R:IGF1R
+3000003551@OGG|IKBKB:IKBKB
+3000003552@OGG|IL1A:IL1A
+3000003553@OGG|IL1B:IL1B
+3000003562@OGG|IL3:IL3
+3000003565@OGG|IL4:IL4
+3000003566@OGG|IL4R:IL4R
+3000003569@OGG|IL6:IL6
+3000003570@OGG|IL6R:IL6R
+3000003576@OGG|IL8:IL8
+3000003577@OGG|CXCR1:CXCR1
+3000003579@OGG|CXCR2:CXCR2
+3000003586@OGG|IL10:IL10
+3000003589@OGG|IL11:IL11
+3000003592@OGG|IL12A:IL12A
+3000003603@OGG|IL16:IL16
+3000003606@OGG|IL18:IL18
+3000003630@OGG|INS:INS
+3000003635@OGG|INPP5D:INPP5D
+3000003643@OGG|INSR:INSR
+3000003658@OGG|IREB2:IREB2
+3000003667@OGG|IRS1:IRS1
+3000003717@OGG|JAK2:JAK2
+3000003725@OGG|JUN:JUN
+3000003836@OGG|KPNA1:KPNA1
+3000003837@OGG|KPNB1:KPNB1
+3000003841@OGG|KPNA5:KPNA5
+3000003902@OGG|LAG3:LAG3
+3000003932@OGG|LCK:LCK
+3000003949@OGG|LDLR:LDLR
+3000003956@OGG|LGALS1:LGALS1
+3000003990@OGG|LIPC:LIPC
+3000004015@OGG|LOX:LOX
+3000004023@OGG|LPL:LPL
+3000004035@OGG|LRP1:LRP1
+3000004040@OGG|LRP6:LRP6
+3000004059@OGG|BCAM:BCAM
+3000004129@OGG|MAOB:MAOB
+3000004137@OGG|MAPT:MAPT
+3000004143@OGG|MAT1A:MAT1A
+3000004155@OGG|MBP:MBP
+3000004208@OGG|MEF2C:MEF2C
+3000004282@OGG|MIF:MIF
+3000004311@OGG|MME:MME
+3000004313@OGG|MMP2:MMP2
+3000004314@OGG|MMP3:MMP3
+3000004318@OGG|MMP9:MMP9
+3000004319@OGG|MMP10:MMP10
+3000004353@OGG|MPO:MPO
+3000004357@OGG|MPST:MPST
+3000004482@OGG|MSRA:MSRA
+3000004512@OGG|COX1:COX1
+3000004513@OGG|COX2:COX2
+3000004524@OGG|MTHFR:MTHFR
+3000004535@OGG|ND1:ND1
+3000004598@OGG|MVK:MVK
+3000004738@OGG|NEDD8:NEDD8
+3000004739@OGG|NEDD9:NEDD9
+3000004763@OGG|NF1:NF1
+3000004780@OGG|NFE2L2:NFE2L2
+3000004790@OGG|NFKB1:NFKB1
+3000004803@OGG|NGF:NGF
+3000004804@OGG|NGFR:NGFR
+3000004842@OGG|NOS1:NOS1
+3000004843@OGG|NOS2:NOS2
+3000004851@OGG|NOTCH1:NOTCH1
+3000004852@OGG|NPY:NPY
+3000004908@OGG|NTF3:NTF3
+3000004909@OGG|NTF4:NTF4
+3000004914@OGG|NTRK1:NTRK1
+3000004915@OGG|NTRK2:NTRK2
+3000004916@OGG|NTRK3:NTRK3
+3000004922@OGG|NTS:NTS
+3000005009@OGG|OTC:OTC
+3000005019@OGG|OXCT1:OXCT1
+3000005027@OGG|P2RX7:P2RX7
+3000005037@OGG|PEBP1:PEBP1
+3000005054@OGG|SERPINE1:SERPINE1
+3000005093@OGG|PCBP1:PCBP1
+3000005094@OGG|PCBP2:PCBP2
+3000005105@OGG|PCK1:PCK1
+3000005122@OGG|PCSK1:PCSK1
+3000005160@OGG|PDHA1:PDHA1
+3000005163@OGG|PDK1:PDK1
+3000005213@OGG|PFKM:PFKM
+3000005229@OGG|PGGT1B:PGGT1B
+3000005230@OGG|PGK1:PGK1
+3000005232@OGG|PGK2:PGK2
+3000005238@OGG|PGM3:PGM3
+3000005274@OGG|SERPINI1:SERPINI1
+3000005319@OGG|PLA2G1B:PLA2G1B
+3000005321@OGG|PLA2G4A:PLA2G4A
+3000005327@OGG|PLAT:PLAT
+3000005328@OGG|PLAU:PLAU
+3000005340@OGG|PLG:PLG
+3000005354@OGG|PLP1:PLP1
+3000005423@OGG|POLB:POLB
+3000005424@OGG|POLD1:POLD1
+3000005465@OGG|PPARA:PPARA
+3000005468@OGG|PPARG:PPARG
+3000005515@OGG|PPP2CA:PPP2CA
+3000005557@OGG|PRIM1:PRIM1
+3000005563@OGG|PRKAA2:PRKAA2
+3000005592@OGG|PRKG1:PRKG1
+3000005594@OGG|MAPK1:MAPK1
+3000005595@OGG|MAPK3:MAPK3
+3000005599@OGG|MAPK8:MAPK8
+3000005600@OGG|MAPK11:MAPK11
+3000005603@OGG|MAPK13:MAPK13
+3000005604@OGG|MAP2K1:MAP2K1
+3000005606@OGG|MAP2K3:MAP2K3
+3000005608@OGG|MAP2K6:MAP2K6
+3000005609@OGG|MAP2K7:MAP2K7
+3000005621@OGG|PRNP:PRNP
+3000005649@OGG|RELN:RELN
+3000005663@OGG|PSEN1:PSEN1
+3000005664@OGG|PSEN2:PSEN2
+3000005715@OGG|PSMD9:PSMD9
+3000005728@OGG|PTEN:PTEN
+3000005743@OGG|PTGS2:PTGS2
+3000005770@OGG|PTPN1:PTPN1
+3000005819@OGG|PVRL2:PVRL2
+3000005879@OGG|RAC1:RAC1
+3000005894@OGG|RAF1:RAF1
+3000005914@OGG|RARA:RARA
+3000005970@OGG|RELA:RELA
+3000006009@OGG|RHEB:RHEB
+3000006195@OGG|RPS6KA1:RPS6KA1
+3000006198@OGG|RPS6KB1:RPS6KB1
+3000006263@OGG|RYR3:RYR3
+3000006285@OGG|S100B:S100B
+3000006300@OGG|MAPK12:MAPK12
+3000006310@OGG|ATXN1:ATXN1
+3000006347@OGG|CCL2:CCL2
+3000006383@OGG|SDC2:SDC2
+3000006416@OGG|MAP2K4:MAP2K4
+3000006418@OGG|SET:SET
+3000006464@OGG|SHC1:SHC1
+3000006489@OGG|ST8SIA1:ST8SIA1
+3000006490@OGG|PMEL:PMEL
+3000006500@OGG|SKP1:SKP1
+3000006513@OGG|SLC2A1:SLC2A1
+3000006515@OGG|SLC2A3:SLC2A3
+3000006517@OGG|SLC2A4:SLC2A4
+3000006610@OGG|SMPD2:SMPD2
+3000006622@OGG|SNCA:SNCA
+3000006647@OGG|SOD1:SOD1
+3000006655@OGG|SOS2:SOS2
+3000006675@OGG|UAP1:UAP1
+3000006714@OGG|SRC:SRC
+3000006717@OGG|SRI:SRI
+3000006750@OGG|SST:SST
+3000006794@OGG|STK11:STK11
+3000006812@OGG|STXBP1:STXBP1
+3000006821@OGG|SUOX:SUOX
+3000006844@OGG|VAMP2:VAMP2
+3000006855@OGG|SYP:SYP
+3000006868@OGG|ADAM17:ADAM17
+3000007018@OGG|TF:TF
+3000007019@OGG|TFAM:TFAM
+3000007024@OGG|TFCP2:TFCP2
+3000007052@OGG|TGM2:TGM2
+3000007054@OGG|TH:TH
+3000007064@OGG|THOP1:THOP1
+3000007067@OGG|THRA:THRA
+3000007076@OGG|TIMP1:TIMP1
+3000007097@OGG|TLR2:TLR2
+3000007098@OGG|TLR3:TLR3
+3000007099@OGG|TLR4:TLR4
+3000007124@OGG|TNF:TNF
+3000007127@OGG|TNFAIP2:TNFAIP2
+3000007132@OGG|TNFRSF1A:TNFRSF1A
+3000007157@OGG|TP53:TP53
+3000007186@OGG|TRAF2:TRAF2
+3000007234@OGG|TRNAU1:TRNAU1
+3000007263@OGG|TST:TST
+3000007275@OGG|TUB:TUB
+3000007276@OGG|TTR:TTR
+3000007295@OGG|TXN:TXN
+3000007305@OGG|TYROBP:TYROBP
+3000007317@OGG|UBA1:UBA1
+3000007342@OGG|UBP1:UBP1
+3000007412@OGG|VCAM1:VCAM1
+3000007422@OGG|VEGFA:VEGFA
+3000007428@OGG|VHL:VHL
+3000007471@OGG|WNT1:WNT1
+3000007474@OGG|WNT5A:WNT5A
+3000007476@OGG|WNT7A:WNT7A
+3000007494@OGG|XBP1:XBP1
+3000007535@OGG|ZAP70:ZAP70
+3000007767@OGG|ZNF224:ZNF224
+3000007804@OGG|LRP8:LRP8
+3000007852@OGG|CXCR4:CXCR4
+3000008301@OGG|PICALM:PICALM
+3000008312@OGG|AXIN1:AXIN1
+3000008313@OGG|AXIN2:AXIN2
+3000008408@OGG|ULK1:ULK1
+3000008473@OGG|OGT:OGT
+3000008484@OGG|GALR3:GALR3
+3000008520@OGG|HAT1:HAT1
+3000008573@OGG|CASK:CASK
+3000008654@OGG|PDE5A:PDE5A
+3000008660@OGG|IRS2:IRS2
+3000008678@OGG|BECN1:BECN1
+3000008685@OGG|MARCO:MARCO
+3000008711@OGG|TNK1:TNK1
+3000008717@OGG|TRADD:TRADD
+3000008739@OGG|HRK:HRK
+3000008767@OGG|RIPK2:RIPK2
+3000008772@OGG|FADD:FADD
+3000008781@OGG|PSPHP1:PSPHP1
+3000008794@OGG|TNFRSF10C:TNFRSF10C
+3000008811@OGG|GALR2:GALR2
+3000008820@OGG|HESX1:HESX1
+3000008840@OGG|WISP1:WISP1
+3000008851@OGG|CDK5R1:CDK5R1
+3000008877@OGG|SPHK1:SPHK1
+3000008945@OGG|BTRC:BTRC
+3000009023@OGG|CH25H:CH25H
+3000009039@OGG|UBA3:UBA3
+3000009040@OGG|UBE2M:UBE2M
+3000009140@OGG|ATG12:ATG12
+3000009445@OGG|ITM2B:ITM2B
+3000009446@OGG|GSTO1:GSTO1
+3000009451@OGG|EIF2AK3:EIF2AK3
+3000009453@OGG|GGPS1:GGPS1
+3000009474@OGG|ATG5:ATG5
+3000009479@OGG|MAPK8IP1:MAPK8IP1
+3000009507@OGG|ADAMTS4:ADAMTS4
+3000009518@OGG|GDF15:GDF15
+3000009532@OGG|BAG2:BAG2
+3000009559@OGG|VPS26A:VPS26A
+3000009611@OGG|NCOR1:NCOR1
+3000009612@OGG|NCOR2:NCOR2
+3000009776@OGG|ATG13:ATG13
+3000009818@OGG|NUPL1:NUPL1
+3000009821@OGG|RB1CC1:RB1CC1
+3000009846@OGG|GAB2:GAB2
+3000009945@OGG|GFPT2:GFPT2
+3000009968@OGG|MED12:MED12
+3000010011@OGG|SRA1:SRA1
+3000010062@OGG|NR1H3:NR1H3
+3000010123@OGG|ARL4C:ARL4C
+3000010220@OGG|GDF11:GDF11
+3000010273@OGG|STUB1:STUB1
+3000010344@OGG|CCL26:CCL26
+3000010347@OGG|ABCA7:ABCA7
+3000010392@OGG|NOD1:NOD1
+3000010399@OGG|GNB2L1:GNB2L1
+3000010452@OGG|TOMM40:TOMM40
+3000010519@OGG|CIB1:CIB1
+3000010524@OGG|KAT5:KAT5
+3000010533@OGG|ATG7:ATG7
+3000010561@OGG|IFI44:IFI44
+3000010654@OGG|PMVK:PMVK
+3000010658@OGG|CELF1:CELF1
+3000010718@OGG|NRG3:NRG3
+3000010803@OGG|CCR9:CCR9
+3000010979@OGG|FERMT2:FERMT2
+3000011162@OGG|NUDT6:NUDT6
+3000011197@OGG|WIF1:WIF1
+3000022861@OGG|NLRP1:NLRP1
+3000022918@OGG|CD93:CD93
+3000022921@OGG|MSRB2:MSRB2
+3000022926@OGG|ATF6:ATF6
+3000022933@OGG|SIRT2:SIRT2
+3000022943@OGG|DKK1:DKK1
+3000023025@OGG|UNC13A:UNC13A
+3000023286@OGG|WWC1:WWC1
+3000023385@OGG|NCSTN:NCSTN
+3000023408@OGG|SIRT5:SIRT5
+3000023409@OGG|SIRT4:SIRT4
+3000023410@OGG|SIRT3:SIRT3
+3000023411@OGG|SIRT1:SIRT1
+3000023420@OGG|NOMO1:NOMO1
+3000023435@OGG|TARDBP:TARDBP
+3000023607@OGG|CD2AP:CD2AP
+3000023621@OGG|BACE1:BACE1
+3000023636@OGG|NUP62:NUP62
+3000023770@OGG|FKBP8:FKBP8
+3000026047@OGG|CNTNAP2:CNTNAP2
+3000026330@OGG|GAPDHS:GAPDHS
+3000027242@OGG|TNFRSF21:TNFRSF21
+3000027328@OGG|PCDH11X:PCDH11X
+3000029108@OGG|PYCARD:PYCARD
+3000029979@OGG|UBQLN1:UBQLN1
+3000030061@OGG|SLC40A1:SLC40A1
+3000030818@OGG|KCNIP3:KCNIP3
+3000051107@OGG|APH1A:APH1A
+3000051176@OGG|LEF1:LEF1
+3000051311@OGG|TLR8:TLR8
+3000051314@OGG|NME8:NME8
+3000051380@OGG|CSAD:CSAD
+3000051547@OGG|SIRT7:SIRT7
+3000051548@OGG|SIRT6:SIRT6
+3000051699@OGG|VPS29:VPS29
+3000051763@OGG|INPP5K:INPP5K
+3000053371@OGG|NUP54:NUP54
+3000054106@OGG|TLR9:TLR9
+3000054205@OGG|CYCS:CYCS
+3000054209@OGG|TREM2:TREM2
+3000054210@OGG|TREM1:TREM1
+3000055063@OGG|ZCWPW1:ZCWPW1
+3000055737@OGG|VPS35:VPS35
+3000055740@OGG|ENAH:ENAH
+3000055811@OGG|ADCY10:ADCY10
+3000055851@OGG|PSENEN:PSENEN
+3000055901@OGG|THSD1:THSD1
+3000056896@OGG|DPYSL5:DPYSL5
+3000056926@OGG|NCLN:NCLN
+3000057089@OGG|ENTPD7:ENTPD7
+3000057091@OGG|CASS4:CASS4
+3000058484@OGG|NLRC4:NLRC4
+3000064127@OGG|NOD2:NOD2
+3000064422@OGG|ATG3:ATG3
+3000064840@OGG|PORCN:PORCN
+3000079412@OGG|KREMEN2:KREMEN2
+3000083464@OGG|APH1B:APH1B
+3000083734@OGG|ATG10:ATG10
+3000083939@OGG|EIF2A:EIF2A
+3000084148@OGG|KAT8:KAT8
+3000084335@OGG|AKT1S1:AKT1S1
+3000084516@OGG|DCTN5:DCTN5
+3000084547@OGG|PGBD1:PGBD1
+3000084876@OGG|ORAI1:ORAI1
+3000089780@OGG|WNT3A:WNT3A
+3000089832@OGG|CHRFAM7A:CHRFAM7A
+3000090332@OGG|EXOC3L2:EXOC3L2
+3000090865@OGG|IL33:IL33
+3000114548@OGG|NLRP3:NLRP3
+3000114815@OGG|SORCS1:SORCS1
+3000115701@OGG|ALPK2:ALPK2
+3000116449@OGG|CLNK:CLNK
+3000123041@OGG|SLC24A4:SLC24A4
+3000245802@OGG|MS4A6E:MS4A6E
+3000255022@OGG|CALHM1:CALHM1
+3000267015@OGG|HLA-S:HLA-S
+3000377630@OGG|USP17L2:USP17L2
+3000406915@OGG|MIR128-1:MIR128-1
+3000729230@OGG|CCR2:CCR2
+3100125288@OGG|ZGLP1:ZGLP1
+3100271696@OGG|MS4:MS4
+3100506742@OGG|CASP12:CASP12
+3100885779@OGG|LINC-ROR:LINC-ROR
+0000014@OGMS|clinical finding:clinical finding
+0000123@OGMS|clinical data item:clinical data item
+0000018@OGMS|laboratory finding:laboratory finding
+0000023@OGMS|phenotype:phenotype
+0000024@OGMS|sign:sign
+0000029@OGMS|vital sign:vital sign
+0000032@OGMS|homeostasis:homeostasis
+0000037@OGMS|abnormal homeostasis:abnormal homeostasis
+0000057@OGMS|physical examination:physical examination
+0000096@OGMS|health care process:health care process
+0000083@OGMS|physical examination finding:physical examination finding
+0000095@OGMS|inflammatory process:inflammatory process
+0000118@OGMS|onset:onset
+0001022@OMIABIS|population based study design:population based study design
+0001440@OMIT|Pathogen-Associated Molecular Pattern Molecules:Pathogen-Associated Molecular Pattern Molecules
+0001660@OMIT|Adenine Nucleotides:Adenine Nucleotides
+0001676@OMIT|Adenosine Diphosphate:Adenosine Diphosphate
+0001681@OMIT|Adenosine Monophosphate:Adenosine Monophosphate
+0003783@OMIT|Cell Cycle:Cell Cycle
+0004120@OMIT|Cholinesterase Inhibitors:Cholinesterase Inhibitors
+0004233@OMIT|Chylomicrons:Chylomicrons
+0005212@OMIT|Diagnosis, Differential:Diagnosis, Differential
+0006903@OMIT|Galantamine:Galantamine
+0007329@OMIT|Guanine Nucleotides:Guanine Nucleotides
+0007332@OMIT|Guanosine Diphosphate:Guanosine Diphosphate
+0007336@OMIT|Guanosine Monophosphate:Guanosine Monophosphate
+0007339@OMIT|Guanosine Triphosphate:Guanosine Triphosphate
+0007752@OMIT|Hexokinase:Hexokinase
+0008516@OMIT|Interphase:Interphase
+0011060@OMIT|Brief Psychiatric Rating Scale:Brief Psychiatric Rating Scale
+0011723@OMIT|Type C Phospholipases:Type C Phospholipases
+0011724@OMIT|Phospholipase D:Phospholipase D
+0012702@OMIT|Pyruvate Dehydrogenase Complex:Pyruvate Dehydrogenase Complex
+0016017@OMIT|Lipid Peroxidation:Lipid Peroxidation
+0016535@OMIT|Complement C1q:Complement C1q
+0016539@OMIT|Complement C3a:Complement C3a
+0016582@OMIT|Cohort Effect:Cohort Effect
+0016584@OMIT|Placebo Effect:Placebo Effect
+0016737@OMIT|G0 Phase:G0 Phase
+0016738@OMIT|G1 Phase:G1 Phase
+0016740@OMIT|G2 Phase:G2 Phase
+0017845@OMIT|Antigens, CD45:Antigens, CD45
+0020425@OMIT|GTP-Binding Protein Regulators:GTP-Binding Protein Regulators
+0020519@OMIT|Guanine Nucleotide Exchange Factors:Guanine Nucleotide Exchange Factors
+0024325@OMIT|Lipid Metabolism:Lipid Metabolism
+UPA00026@UPa|metabolism:metabolism
+0024504@OMIT|Complement C5b:Complement C5b
+0025630@OMIT|DNA Fragmentation:DNA Fragmentation
+0026595@OMIT|Diffusion Tensor Imaging:Diffusion Tensor Imaging
+0026640@OMIT|Sirtuin 1:Sirtuin 1
+0027103@OMIT|Endophenotypes:Endophenotypes
+0027220@OMIT|Receptors, Ionotropic Glutamate:Receptors, Ionotropic Glutamate
+0027570@OMIT|Cholinergic Neurons:Cholinergic Neurons
+0027606@OMIT|Cell Cycle Checkpoints:Cell Cycle Checkpoints
+0027626@OMIT|G2 Phase Cell Cycle Checkpoints:G2 Phase Cell Cycle Checkpoints
+0027628@OMIT|G1 Phase Cell Cycle Checkpoints:G1 Phase Cell Cycle Checkpoints
+0027688@OMIT|Neuroimaging:Neuroimaging
+0027689@OMIT|Functional Neuroimaging:Functional Neuroimaging
+0027985@OMIT|Immunoreceptor Tyrosine-Based Activation Motif:Immunoreceptor Tyrosine-Based Activation Motif
+0000070@ONS|Cohort Study:Cohort Study
+0000072@ONS|Cross-Sectional Survey:Cross-Sectional Survey
+0000447@OPMI|cytokine biomarker:cytokine biomarker
+0000448@OPMI|inflammatory cytokine biomarker:inflammatory cytokine biomarker
+0000011@PATO|age:age
+0001241@PATO|physical object quality:physical object quality
+0000047@PATO|biological sex:biological sex
+0000052@PATO|shape:shape
+0000383@PATO|female:female
+0000384@PATO|male:male
+0000936@PATO|truncated:truncated
+0002084@PLANA|presynaptic terminal:presynaptic terminal
+000003112@PR|NFAT protein:NFAT protein
+000004168@PR|amyloid-beta precursor protein:amyloid-beta precursor protein
+000018264@PR|proteolytic cleavage product:proteolytic cleavage product
+000021998@PR|neurotrophin:neurotrophin
+000025580@PR|C99:C99
+000025581@PR|C83:C83
+0000008@PW|Wnt signaling pathway:Wnt signaling pathway
+0000143@PW|insulin signaling pathway:insulin signaling pathway
+0000180@PW|mTOR signaling pathway:mTOR signaling pathway
+0002425@PW|synaptic vesicle exocytosis pathway:synaptic vesicle exocytosis pathway
+0000120@REX|active transport:active transport
+0000268@SCDO|Comparative Study:Comparative Study
+0000676@SCDO|Kidney Function Test:Kidney Function Test
+0000167@SO|promoter:promoter
+0000276@SO|miRNA:miRNA
+0000089@STATO|case-control study design:case-control study design
+0000182@STATO|odds ratio:odds ratio
+0000184@STATO|ratio:ratio
+0000412@STATO|prevalence:prevalence
+0000413@STATO|incidence:incidence
+0000414@STATO|mortality:mortality
+0000016@SYMP|confusion:confusion
+0000410@SYMP|neurological and physiological symptom:neurological and physiological symptom
+0000022@SYMP|depression:depression
+0000024@SYMP|drowsiness:drowsiness
+0000061@SYMP|inflammation:inflammation
+0000099@SYMP|pain:pain
+0000480@SYMP|nervous system symptom:nervous system symptom
+0000124@SYMP|seizure:seizure
+0000132@SYMP|necrosis:necrosis
+0000178@SYMP|weight loss:weight loss
+0000271@SYMP|complex partial seizure:complex partial seizure
+0000387@SYMP|head symptom:head symptom
+0000462@SYMP|symptom:symptom
+0000412@SYMP|anxiety:anxiety
+0000434@SYMP|urticaria:urticaria
+0000488@SYMP|skin and integumentary tissue symptom:skin and integumentary tissue symptom
+0000439@SYMP|heartburn:heartburn
+0000457@SYMP|abdominal pain:abdominal pain
+0000458@SYMP|nausea:nausea
+0000461@SYMP|abdominal symptom:abdominal symptom
+0000486@SYMP|urinary system symptom:urinary system symptom
+0000504@SYMP|headache:headache
+0000571@SYMP|insomnia:insomnia
+0000576@SYMP|chest pain:chest pain
+0000610@SYMP|dizziness:dizziness
+0000731@SYMP|renal failure:renal failure
+0000734@SYMP|stroke:stroke
+0019180@SYMP|constipation:constipation
+0019182@SYMP|behavioral symptom:behavioral symptom
+0000145@TXPO|function-related process:function-related process
+0000271@TXPO|primitive process:primitive process
+0000328@TXPO|ion channel:ion channel
+0003638@TXPO|transporter:transporter
+0000378@TXPO|functioning process:functioning process
+0000434@TXPO|malfunctioning process:malfunctioning process
+0000438@TXPO|dysfunctioning:dysfunctioning
+0000673@TXPO|starvation:starvation
+0001865@TXPO|protein kinase:protein kinase
+0002361@TXPO|mitochondrial dysfunction:mitochondrial dysfunction
+0002661@TXPO|protein aggregation:protein aggregation
+0003321@TXPO|ceramidase:ceramidase
+0003727@TXPO|functional role:functional role
+0003645@TXPO|transcription factor:transcription factor
+0003655@TXPO|potassium channel:potassium channel
+0003668@TXPO|GTPase:GTPase
+0003670@TXPO|histone deacetylase:histone deacetylase
+0003671@TXPO|phospholipase:phospholipase
+0003673@TXPO|phosphatase:phosphatase
+0003680@TXPO|ligand-gated ion channel:ligand-gated ion channel
+0004096@TXPO|protein ubiquitination:protein ubiquitination
+0004143@TXPO|ceramide acumulation:ceramide acumulation
+0004563@TXPO|GPCR:GPCR
+0005150@TXPO|niacin:niacin
+0000045@UBERON|ganglion:ganglion
+0010001@UBERON|cell cluster organ:cell cluster organ
+0000465@UBERON|material anatomical entity:material anatomical entity
+0000062@UBERON|organ:organ
+0010000@UBERON|multicellular anatomical structure:multicellular anatomical structure
+0000064@UBERON|organ part:organ part
+0000073@UBERON|regional part of nervous system:regional part of nervous system
+0000481@UBERON|multi-tissue structure:multi-tissue structure
+0000120@UBERON|blood brain barrier:blood brain barrier
+0000122@UBERON|neuron projection bundle:neuron projection bundle
+0005162@UBERON|multi cell part structure:multi cell part structure
+0000125@UBERON|neural nucleus:neural nucleus
+0011215@UBERON|central nervous system cell part cluster:central nervous system cell part cluster
+0000178@UBERON|blood:blood
+0000200@UBERON|gyrus:gyrus
+0004121@UBERON|ectoderm-derived structure:ectoderm-derived structure
+0010314@UBERON|structure with developmental contribution from neural crest:structure with developmental contribution from neural crest
+0034768@UBERON|morphological feature:morphological feature
+0000353@UBERON|parenchyma:parenchyma
+0000451@UBERON|prefrontal cortex:prefrontal cortex
+0002616@UBERON|regional part of brain:regional part of brain
+0000463@UBERON|organism substance:organism substance
+0000464@UBERON|anatomical space:anatomical space
+0000466@UBERON|immaterial anatomical entity:immaterial anatomical entity
+0000477@UBERON|anatomical cluster:anatomical cluster
+0000479@UBERON|tissue:tissue
+0000483@UBERON|epithelium:epithelium
+0000487@UBERON|simple squamous epithelium:simple squamous epithelium
+0000490@UBERON|unilaminar epithelium:unilaminar epithelium
+0006914@UBERON|squamous epithelium:squamous epithelium
+0000489@UBERON|cavitated compound organ:cavitated compound organ
+0003103@UBERON|compound organ:compound organ
+0000955@UBERON|brain:brain
+0016548@UBERON|central nervous system gray matter layer:central nervous system gray matter layer
+0001017@UBERON|central nervous system:central nervous system
+0011216@UBERON|organ system subdivision:organ system subdivision
+0001018@UBERON|axon tract:axon tract
+0001277@UBERON|intestinal epithelium:intestinal epithelium
+0001359@UBERON|cerebrospinal fluid:cerebrospinal fluid
+0007779@UBERON|transudate:transudate
+0001851@UBERON|cortex:cortex
+0001869@UBERON|cerebral hemisphere:cerebral hemisphere
+0015212@UBERON|lateral structure:lateral structure
+0001871@UBERON|temporal lobe:temporal lobe
+0016526@UBERON|lobe of cerebral hemisphere:lobe of cerebral hemisphere
+0001872@UBERON|parietal lobe:parietal lobe
+0001876@UBERON|amygdala:amygdala
+0002420@UBERON|basal ganglion:basal ganglion
+0005401@UBERON|cerebral hemisphere gray matter:cerebral hemisphere gray matter
+0001894@UBERON|diencephalon:diencephalon
+0001926@UBERON|lateral geniculate body:lateral geniculate body
+0002020@UBERON|gray matter:gray matter
+0001950@UBERON|neocortex:neocortex
+0001986@UBERON|endothelium:endothelium
+0012275@UBERON|meso-epithelium:meso-epithelium
+0002037@UBERON|cerebellum:cerebellum
+0002038@UBERON|substantia nigra:substantia nigra
+0009661@UBERON|midbrain nucleus:midbrain nucleus
+0002148@UBERON|locus ceruleus:locus ceruleus
+0006331@UBERON|brainstem nucleus:brainstem nucleus
+0009662@UBERON|hindbrain nucleus:hindbrain nucleus
+0002240@UBERON|spinal cord:spinal cord
+0005174@UBERON|dorsal region element:dorsal region element
+0002298@UBERON|brainstem:brainstem
+0002304@UBERON|layer of dentate gyrus:layer of dentate gyrus
+0022303@UBERON|nervous system cell part layer:nervous system cell part layer
+0002308@UBERON|nucleus of brain:nucleus of brain
+0002316@UBERON|white matter:white matter
+0003528@UBERON|brain gray matter:brain gray matter
+0007245@UBERON|nuclear complex of neuraxis:nuclear complex of neuraxis
+0002421@UBERON|hippocampal formation:hippocampal formation
+0002435@UBERON|striatum:striatum
+0011300@UBERON|gray matter of telencephalon:gray matter of telencephalon
+0002600@UBERON|limbic lobe:limbic lobe
+0002728@UBERON|entorhinal cortex:entorhinal cortex
+0002751@UBERON|inferior temporal gyrus:inferior temporal gyrus
+0003027@UBERON|cingulate cortex:cingulate cortex
+0003876@UBERON|hippocampal field:hippocampal field
+0003909@UBERON|sinusoid:sinusoid
+0003947@UBERON|brain ventricle/choroid plexus:brain ventricle/choroid plexus
+0004086@UBERON|brain ventricle:brain ventricle
+0005358@UBERON|ventricle of nervous system:ventricle of nervous system
+0004120@UBERON|mesoderm-derived structure:mesoderm-derived structure
+0005913@UBERON|zone of bone organ:zone of bone organ
+0034944@UBERON|zone of organ:zone of organ
+0006314@UBERON|bodily fluid:bodily fluid
+0009834@UBERON|dorsolateral prefrontal cortex:dorsolateral prefrontal cortex
+0009835@UBERON|anterior cingulate cortex:anterior cingulate cortex
+0034922@UBERON|cell cluster:cell cluster
+0019264@UBERON|gray matter of forebrain:gray matter of forebrain
+0013529@UBERON|Brodmann area:Brodmann area
+0014933@UBERON|periventricular gray matter:periventricular gray matter
+0016525@UBERON|frontal lobe:frontal lobe
+0016529@UBERON|cortex of cerebral lobe:cortex of cerebral lobe
+0016540@UBERON|occipital cortex:occipital cortex
+0022353@UBERON|posterior cingulate cortex:posterior cingulate cortex
+0035014@UBERON|functional part of brain:functional part of brain
+2002210@UBERON|mossy fiber:mossy fiber
+2002218@UBERON|parallel fiber:parallel fiber
+UPA00426@UPa|energy metabolism:energy metabolism
+UPA00468@UPa|protein degradation:protein degradation
+UPC00165@UPa|diacylglycerol:diacylglycerol
+UPC00235@UPa|dimethylallyl diphosphate:dimethylallyl diphosphate
+UPC00272@UPa|tetrahydrobiopterin:tetrahydrobiopterin
+0000792@VO|mouse gene:mouse gene
+0000653@XCO|ionotropic glutamate receptor antagonist:ionotropic glutamate receptor antagonist
+#activity@AlzheimerOntology#performing|performing physical activity:performing physical activity
+#procedure@AlzheimerOntology#non-pharmacotherapy|non-pharmacotherapy procedure:non-pharmacotherapy procedure
+#00000000000000000000@ADO#OWLClass|TM_BIN_isTreatmentFor:TM_BIN_isTreatmentFor
+#00000000000000000001@ADO#OWLClass|TM_BIN_isSignAndSymptomFor:TM_BIN_isSignAndSymptomFor
+#00000000000000000002@ADO#OWLClass|TM_BIN_VariantisGeneticRiskFactorFor:TM_BIN_VariantisGeneticRiskFactorFor
+#symptom@ADO#cognitive|cognitive symptom:cognitive symptom

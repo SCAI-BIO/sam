@@ -1,0 +1,37 @@
+# signs and symptoms
+0000462@SYMP|symptom:symptom
+0000459@SYMP|digestive system symptom:digestive system symptom
+0000473@SYMP|nutrition, metabolism, and development symptom:nutrition, metabolism, and development symptom
+0000567@SYMP|general symptom:general symptom
+0000410@SYMP|neurological and physiological symptom:neurological and physiological symptom
+0000480@SYMP|nervous system symptom:nervous system symptom
+0000387@SYMP|head symptom:head symptom
+0000488@SYMP|skin and integumentary tissue symptom:skin and integumentary tissue symptom
+0000461@SYMP|abdominal symptom:abdominal symptom
+0000486@SYMP|urinary system symptom:urinary system symptom
+0002013@HP|Vomiting:Vomiting
+0000458@SYMP|nausea:nausea
+0019180@SYMP|constipation:constipation
+0005331@MP|insulin resistance:insulin resistance
+0000178@SYMP|weight loss:weight loss
+C3399@NCIT|Swelling:Swelling
+0000061@SYMP|inflammation:inflammation
+0000132@SYMP|necrosis:necrosis
+0000571@SYMP|insomnia:insomnia
+0000016@SYMP|confusion:confusion
+0000022@SYMP|depression:depression
+0000024@SYMP|drowsiness:drowsiness
+0000412@SYMP|anxiety:anxiety
+0000610@SYMP|dizziness:dizziness
+0000099@SYMP|pain:pain
+0000124@SYMP|seizure:seizure
+0000734@SYMP|stroke:stroke
+0019182@SYMP|behavioral symptom:behavioral symptom
+0000439@SYMP|heartburn:heartburn
+0000457@SYMP|abdominal pain:abdominal pain
+0000504@SYMP|headache:headache
+0000576@SYMP|chest pain:chest pain
+0000271@SYMP|complex partial seizure:complex partial seizure
+#0000434@SYMP|urticaria:urticaria
+#0000731@SYMP|renal failure:renal failure
+#symptom@ADO#cognitive|cognitive symptom:cognitive symptom

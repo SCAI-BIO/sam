@@ -1,0 +1,5 @@
+olsid	longname	shortname	description	iri	version
+"JPMTaggerAnnotator(ADO_RISK_FACTORS)"   "TextMining Genetic Risk Factor (ADO)"  "Alzheimer's Disease Risk Factors"  "Subset of Alzheimer's Disease Ontology (ADO)"  "https://www.scai.fraunhofer.de/ado#"   "1.0-SNAPSHOT"
+"JPMTaggerAnnotator(ADO_SIGNS_AND_SYMPTOMS)"   "TextMining Signs and Symptoms (ADO)"  "Alzheimer's Disease Signs and Symptoms"  "Subset of Alzheimer's Disease Ontology (ADO)"  "https://www.scai.fraunhofer.de/ado#"   "1.0-SNAPSHOT"
+"JPMTaggerAnnotator(ADO_TREATMENT)"   "TextMining Treatment (ADO)"  "Alzheimer's Disease Treatment"  "Subset of Alzheimer's Disease Ontology (ADO)"  "https://www.scai.fraunhofer.de/ado#"   "1.0-SNAPSHOT"
+"JPMTaggerAnnotator(GO_BIOLOGICAL_PROCESS)"   "GO Biological Process"  "Gene Ontology's Biological Processes"  "Subset of Gene Ontology (GO)"  "https://www.scai.fraunhofer.de/go#"   "1.0-SNAPSHOT"

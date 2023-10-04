@@ -1,0 +1,14 @@
+olsid	longname	shortname	description	iri	version
+"oscar"	"Chemicals (OSCAR tagged)"	"OSCAR-Tagger"	"Chemicals tagged by using OSCAR tagger. (cf. https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-3-41)"	"http://chemicaltagger.ch.cam.ac.uk"	"5.0.0"
+"Key2AiAnnotator_DISORDER"	"Erkrankungen"	"Gottbert disorder language model (de)"	"German disorder entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/disorder#"	0.1.3-git6125001
+"Key2AiAnnotator_PROCEDURES"	"Verfahren"	"Gottbert procedure language model (de)"	"German procedure entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/procedure#"	0.1.3-git6125001
+"Key2AiAnnotator_DIAGNOSTICS"	"Untersuchungsmethode"	"Gottbert diagnostic language model (de)"	"German diagnostic entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/diagnostic#"	0.1.3-git6125001
+"Key2AiAnnotator_INTAKE"	"Einnahmen"	"Gottbert intake language model (de)"	"German intake entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/intake#"	0.1.3-git6125001
+"Key2AiAnnotator_MEDICATION"	"Medikation"	"Gottbert medication language model (de)"	"German medication entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/medication#"	0.1.3-git6125001
+"Key2AiAnnotator_DOSAGE"	"Dosierung"	"Gottbert dosage language model (de)"	"German dosage entities tagged with pre-trained language model"	"https://www.scai.fraunhofer.de/dosage#"	0.1.3-git6125001
+"Key2AiAnnotator_DISORDER(GoldStandard-1.0)"	"Erkrankungen [Au]"	"Goldstandard disorders (de)"	"German disorder entities manually tagged"	"https://www.scai.fraunhofer.de/disorder#"	GoldStandard-1.0
+"Key2AiAnnotator_PROCEDURES(GoldStandard-1.0)"	"Verfahren [Au]"	"Goldstandard procedures (de)"	"German procedure entities manually tagged"	"https://www.scai.fraunhofer.de/procedure#"	0.1.3-git6125001
+"Key2AiAnnotator_DIAGNOSTICS(GoldStandard-1.0)"	"Untersuchungsmethode [Au]"	"Goldstandard diagnostics (de)"	"German diagnostic entities manually tagged"	"https://www.scai.fraunhofer.de/diagnostic#"	0.1.3-git6125001
+"Key2AiAnnotator_INTAKE(GoldStandard-1.0)"	"Einnahmen [Au]"	"Goldstandard intakes (de)"	"German intake entities tagged manually tagged"	"https://www.scai.fraunhofer.de/intake#"	0.1.3-git6125001
+"Key2AiAnnotator_MEDICATION(GoldStandard-1.0)"	"Medikation [Au]"	"Goldstandard medications (de)"	"German medication entities manually tagged"	"https://www.scai.fraunhofer.de/medication#"	0.1.3-git6125001
+"Key2AiAnnotator_DOSAGE(GoldStandard-1.0)"	"Dosierung [Au]"	"Goldstandard dosages (de)"	"German dosage entities manually tagged"	"https://www.scai.fraunhofer.de/dosage#"	0.1.3-git6125001

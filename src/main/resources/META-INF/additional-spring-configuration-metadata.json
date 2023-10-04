@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "ols.url",
+    "type": "java.lang.String",
+    "description": "the URL where the main OLS is running"
+  },
+  {
+    "name": "ols.maxsize",
+    "type": "java.lang.String",
+    "description": "Maximum number of pages delivered by OLS"
+  },
+  {
+    "name": "ols.backupUrl",
+    "type": "java.lang.String",
+    "description": "the URL where the second OLS is running"
+  }
+]}

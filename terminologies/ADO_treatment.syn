@@ -1,0 +1,64 @@
+# treatment
+35470@CHEBI|central nervous system drug:central nervous system drug
+0000090@OGMS|treatment:treatment
+35476@CHEBI|antipsychotic agent:antipsychotic agent
+3387@CHEBI|carbamazepine:carbamazepine
+35469@CHEBI|antidepressant:antidepressant
+35471@CHEBI|psychotropic drug:psychotropic drug
+35474@CHEBI|anxiolytic drug:anxiolytic drug
+10119@CHEBI|ziprasidone:ziprasidone
+31236@CHEBI|aripiprazole:aripiprazole
+3766@CHEBI|clozapine:clozapine
+5613@CHEBI|haloperidol:haloperidol
+7735@CHEBI|olanzapine:olanzapine
+8707@CHEBI|quetiapine:quetiapine
+8871@CHEBI|risperidone:risperidone
+00011492@DRON|Remoxipride:Remoxipride
+3723@CHEBI|citalopram:citalopram
+5118@CHEBI|fluoxetine:fluoxetine
+7640@CHEBI|nortriptyline:nortriptyline
+7936@CHEBI|paroxetine:paroxetine
+9654@CHEBI|trazodone:trazodone
+00010126@DRON|Isocarboxazid:Isocarboxazid
+6539@CHEBI|Lorazepam:Lorazepam
+7823@CHEBI|oxazepam:oxazepam
+9435@CHEBI|Temazepam:Temazepam
+0000112@OGMS|therapeutic procedure:therapeutic procedure
+1407750@NCBITaxon|herbal medicine:herbal medicine
+000252@GSSO|behavioral therapy:behavioral therapy
+0000058@MAXO|pharmacotherapy:pharmacotherapy
+C15262@NCIT|Immunotherapy:Immunotherapy
+C21097@NCIT|Sedation:Sedation
+#procedure@AlzheimerOntology#non-pharmacotherapy|non-pharmacotherapy procedure:non-pharmacotherapy procedure
+0000644@MAXO|molecular pathway modifying agent therapy:molecular pathway modifying agent therapy
+0000171@MAXO|antidementia agent therapy:antidementia agent therapy
+0000181@MAXO|cardiovascular agent therapy:cardiovascular agent therapy
+0000648@MAXO|enzyme inhibitor agent therapy:enzyme inhibitor agent therapy
+C98241@NCIT|Thiazolidinedione Antidiabetic Agent:Thiazolidinedione Antidiabetic Agent
+64312@CHEBI|memantine:memantine
+82698@CHEBI|suvorexant:suvorexant
+0000648@MAXO|enzyme inhibitor agent therapy:enzyme inhibitor agent therapy
+0000210@MAXO|cholinesterase inhibitor therapy:cholinesterase inhibitor therapy
+0000739@MAXO|HMG-CoA reductase inhibitor therapy:HMG-CoA reductase inhibitor therapy
+C78757@NCIT|Latrepirdine:Latrepirdine
+C81115@NCIT|Semagacestat:Semagacestat
+53289@CHEBI|donepezil:donepezil
+8874@CHEBI|rivastigmine:rivastigmine
+0006903@OMIT|Galantamine:Galantamine
+C76786@NCIT|Tramiprosate:Tramiprosate
+0000652@MAXO|ACE inhibitor therapy:ACE inhibitor therapy
+0000655@MAXO|ACE 1 inhibitor therapy:ACE 1 inhibitor therapy
+0000656@MAXO|ACE 2 inhibitor therapy:ACE 2 inhibitor therapy
+0000210@MAXO|cholinesterase inhibitor therapy:cholinesterase inhibitor therapy
+0000739@MAXO|HMG-CoA reductase inhibitor therapy:HMG-CoA reductase inhibitor therapy
+C78757@NCIT|Latrepirdine:Latrepirdine
+C81115@NCIT|Semagacestat:Semagacestat
+53289@CHEBI|donepezil:donepezil
+8874@CHEBI|rivastigmine:rivastigmine
+0006903@OMIT|Galantamine:Galantamine
+C166444@NCIT|Aducanumab:Aducanumab
+C79569@NCIT|Bapineuzumab:Bapineuzumab
+#activity@AlzheimerOntology#performing|performing physical activity:performing physical activity
+136217@NCBITaxon|Curcuma longa:Curcuma longa
+3311@NCBITaxon|Ginkgo biloba:Ginkgo biloba
+39169@NCBITaxon|Lavandula:Lavandula

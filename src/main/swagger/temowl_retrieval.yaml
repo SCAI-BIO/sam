@@ -1,0 +1,909 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: "SAM, the semantic aggregation machine"
+  name: SAM
+  description: >-
+              API to retrieve and export Terminologies and their contents.
+              Some API Calls expect and/or return a TerminologyID. This ID is configured by the System and depends on the
+              system configuration. A list of all available Terminologies can be obtained via the API Call
+              `\terminologies`.
+              Even though the ID is defined by the system reuse of IDs is intended. For example the TerminologyID of the
+              Terminology 'Gene Ontology' should be 'GO'.
+              If a Terminology is missing or uses an uncommon TerminologyID please contact the system administrator.
+              Issued API Calls with a not present TerminologyID will lead to an error.
+
+              Some API Calls expect and/or return a ConceptID. The ID is either encoded as CURIE
+              (https://www.w3.org/TR/2010/NOTE-curie-20101216/) or a canonical IRI (PURL?!).
+              A CURIE encoding is used if the originating Terminology (the one that initial defined this Concept) is also present
+              in this System, otherwise an IRI is used. However requests issued with an IRI are redirected to a CURIE if
+              possible.
+              However as multiple IRI could be defined for a single Concept this redirect may not work. Please contact the
+              Administrator if you know about a not configured IRI Mapping.
+
+              If a CURIE is returned the non compact URL can be generated. The used prefix corresponds to a
+              valid TerminologyID in this system and thus the API can be used to obtain the longform? to substitute the prefix.
+              The non compact URL should correspond to the canonical IRI used everywhere else.
+
+              If a IRI is returned the system may not have all/sufficient information about the Concept. Please issue a request
+              to the given IRI to obtain more information. Alternatively ask the Administrator to also add this Terminology to
+              the System.
+
+              Please note, Terminologies reuses Concepts from other Terminologies. By that means a Terminology can contain
+              Concepts form multiple Terminologies. For e.g. the Terminology 'ECO' defines new Concepts and also reuse Concepts
+              from 'Gene Ontology'. Due that CURIES are used as request Parameters even tough they duplicate information in some
+              cases.
+              In general ConceptIDs are case sensitive. Non existed ConceptID will lead to an error response.
+
+              Further if a Concept is used in multiple Terminologies present in this System, the Concept is `merged` meaning
+              all defined properties are combined. If conflicts occur and the originating Terminology (the one that initial
+              defined this Concept) is present the properties of originating are used. If not the majority wins, if no
+              majority is present the longest property wins.
+
+              Additionally some API Calls allows to configure the encoding of ConceptIDs in responses. The specified encoding is
+              only performed for Concept where a CURIE can be constructed. For others a IRI is returned.
+
+              Most API Calls allow a Pagination of results via the Parameters page and size. The numbering of pages starts at
+              zero (0). The default page size is 10, the maximal page size is 500. In each response the numberOfPages
+              the totalNumber of Elements as well as current pageNumber are returned.
+
+              All API Calls have a versionTag Parameter that allows to retrieve properties of a specific version of a Terminology.
+              By default the latest version is selected. A List of available versions for a Terminologies can be obtained via
+              the API Call `\terminologies\{ID}\versionTags`. If an invalid versionTag is supplied the latest version is
+              selected
+              instead.
+
+
+              Some API Calls have a language Parameter that allows to filter the response to only contain properties in a
+              specific language. If no property in the given language is present non is returned. The API expect a language to be
+              encoded as defined in https://tools.ietf.org/html/bcp47. Further an extension 'all' is allowed. If that is given
+              properties in all language are returned. The default language is 'en'.
+basePath: /api/v1
+produces:
+ - application/json
+parameters:
+    sizeParam:
+        in: query
+        name: size
+        description: Size of pages
+        type: integer
+        format: int64
+        default: 10
+    pageParam:
+        in: query
+        name: page
+        description: The requested page
+        type: integer
+        format: int64
+        default: 0
+    langParam:
+        in: query
+        name: lang
+        description: This allows to filter the response to only contain descriptions in a
+                 specific language. If no description in the given language is present non is returned. The API
+                 expect a language to be encoded as defined in https://tools.ietf.org/html/bcp47. Further an
+                 extension 'all' is allowed. If that is given properties in all language are returned. The default
+                 language is 'en'.
+        default: 'en'
+        type: string
+    versionTagParam:
+        in: query
+        name: versionTag
+        description: Terminology version defined by tag-name
+        type: string
+    terminologySetIDParam:
+        in: path
+        name: terminologySetId
+        description: Identifier of the terminology.
+        required: true
+        type: string
+    terminologyIDParam:
+        in: path
+        name: terminologyId
+        description: Identifier of the terminology.
+        required: true
+        type: string
+    conceptIDParam:
+        in: path
+        name: conceptId
+        description: Identifier of the concept.
+        required: true
+        type: string
+    autoCompleteQueryParam:
+        in: query
+        name: q
+        description: Beginning of a term to be completed.
+        required: true
+        type: string
+    searchRegexQueryParam:
+        in: query
+        name: q
+        description: Search term.
+        required: true
+        type: string
+    exactMatchParam:
+        in: query
+        name: exact
+        description: Only find exact matches?.
+        required: false
+        type: boolean
+    searchFielsParam:
+        in: query
+        name: field
+        description: To limit results to a property, set field to ID/prefLabel/altLabel/description.
+        type: string
+        enum:
+        - ID
+        - prefLabel
+        - altLabel
+        - description
+responses:
+    NotFound:
+      description: Entity not found.
+      schema:
+        $ref: '#/definitions/Error'
+    BadClient:
+      description: Bad Client Request
+      schema:
+        $ref: '#/definitions/Error'
+    GeneralError:
+      description: General Server Error.
+      schema:
+        $ref: '#/definitions/Error'
+tags:
+  - name: retrieval
+    description: >-
+      Information retrieval queries are performed on the newest versionTag of
+      the terminology if none is supplied.
+  - name: BEL retrieval
+    description: >-
+      BEL-specific information retrieval queries.
+  - name: exporting
+    description: >-
+      Export terminologies in different formats.
+schemes:
+  - https
+  - http
+paths:
+  ########## Retrieval
+  '/terminologies/{terminologyId}/versionTags':
+      get:
+        tags:
+          - retrieval
+        summary: Retrieve all versions of a Terminology.
+        description: Returns all version tags of the specified terminology, paginated using page and size.
+        operationId: Tags-view
+        parameters:
+          - $ref: '#/parameters/terminologyIDParam'
+          - $ref: '#/parameters/pageParam'
+          - $ref: '#/parameters/sizeParam'
+        responses:
+            '200':
+                description: Successful response
+                schema:
+                  $ref: '#/definitions/PagedVersion'
+            '400':
+                $ref: '#/responses/BadClient'
+            '404':
+                $ref: '#/responses/NotFound'
+  '/terminologies/':
+    get:
+      tags:
+        - retrieval
+      summary: Get all terminologies
+      description: >-
+        Returns a terminology's meta information, including a link to the original source and a link to the local refined version, if present. Also returns links to changes and versionTags.
+      operationId: Terminology-Get
+      parameters:
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+           $ref: '#/definitions/PagedTerminology'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/':
+    get:
+      tags:
+        - retrieval
+      summary: Get a terminology's meta information
+      description: >-
+        Returns a terminology's meta information, including a link to the original source and a link to the local refined version, if present. Also returns links to changes and versionTags.
+      operationId: Terminology-Get-Meta
+      parameters:
+          - $ref: '#/parameters/terminologyIDParam'
+          - $ref: '#/parameters/versionTagParam'
+          - $ref: '#/parameters/langParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+           $ref: '#/definitions/Terminology'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's meta information
+      description: >-
+        Returns a concept's meta information and a selection of its altLabels and direct broader/narrower concepts. Set examples to specify the amount returned. Also includes links to its related concepts, its direct broader and narrower, as well as all of its transitive broader and narrower concepts.
+      operationId: Concept-Get-Meta
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/conceptIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - in: query
+          name: idMode
+          description: ID mode of the response
+          type: string
+          enum:
+            - BEL
+            - PURL
+            - CURIE
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Concept'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/labels':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's labels
+      description: Returns all labels, paginated using page and size. Set lang to filter by language, returns all languages by default.
+      operationId: Concept-Get-Labels
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/conceptIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PagedLabel'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/mappings':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's mappings
+      description: Returns all mappings, paginated using page and size. Set type to filter by mapping type. Set sort to sort by referenced concepts.
+      operationId: Concept-Get-Mappings
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/conceptIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - in: query
+          name: type
+          type: string
+          enum:
+            - exactMatch
+            - closeMatch
+            - relatedMatch
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PagedMapping'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/broader':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's broader concepts
+      description: Returns all direct broader concepts, being one hierarchical level above, paginated using page and size.
+      operationId: Concept-Get-Broader
+      parameters:
+          - $ref: '#/parameters/terminologyIDParam'
+          - $ref: '#/parameters/conceptIDParam'
+          - $ref: '#/parameters/versionTagParam'
+          - $ref: '#/parameters/pageParam'
+          - $ref: '#/parameters/sizeParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/narrower':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's narrower concepts
+      description: Returns all direct narrower concepts, being one hierarchical level below, paginated using page and size. Set transitive=true to also get all indirectly narrower concepts of even lower hierarchical levels.
+      operationId: Concept-Get-Narrower
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/conceptIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - in: query
+          name: transitive
+          description: Include transitive narrower concepts?
+          default: false
+          type: boolean
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/{conceptId}/relateds':
+    get:
+      tags:
+        - retrieval
+      summary: Get a concept's related concepts
+      description: >-
+        Returns all direct related concepts, paginated using page and size.
+      operationId: Concept-Get-Relateds
+      parameters:
+          - $ref: '#/parameters/terminologyIDParam'
+          - $ref: '#/parameters/conceptIDParam'
+          - $ref: '#/parameters/versionTagParam'
+          - $ref: '#/parameters/pageParam'
+          - $ref: '#/parameters/sizeParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/search':
+    get:
+      tags:
+        - retrieval
+      summary: Search for concepts
+      description: >-
+        Returns all search results for your term/REGEX, paginated using page and size. Concept's IDs, names, labels and references are considered. Set exact=true to only recieve perfect matches.
+      operationId: Terminology-Seach
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/searchRegexQueryParam'
+        - $ref: '#/parameters/exactMatchParam'
+        - $ref: '#/parameters/searchFielsParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/autocomplete':
+    get:
+      tags:
+        - retrieval
+      summary: Autocomplete concepts
+      description: >-
+        Returns all possible completions for your term, paginated using page and size. Concept's IDs, names, labels and references are considered.
+      operationId: Terminology-Autocompletion
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/autoCompleteQueryParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  ########## BEL retrieval
+  '/terminologies/{terminologyId}/concepts/BEL/NS/search':
+    get:
+      tags:
+        - BEL retrieval
+      summary: Search for BEL concepts in a specific namespace
+      description: >-
+        Returns concepts that are search results for the specified term/REGEX, paginated using page and size. Considers concepts in the specified namespace.
+      operationId: Terminology-Search-Concepts-BELNS
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/searchRegexQueryParam'
+        - $ref: '#/parameters/exactMatchParam'
+        - $ref: '#/parameters/searchFielsParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedBELConceptMin'
+        '400':
+            $ref: '#/responses/BadClient'
+        '404':
+            $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/BEL/Anno/search':
+    get:
+      tags:
+        - BEL retrieval
+      summary: Search for BEL concepts in a specific annotation namespace
+      description: >-
+        Returns concepts that are search results for the specified term/REGEX, paginated using page and size. Considers concepts in the specified annotation namespace.
+      operationId: Terminology-Search-Concepts-BELAnno
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/searchRegexQueryParam'
+        - $ref: '#/parameters/exactMatchParam'
+        - $ref: '#/parameters/searchFielsParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedBELConceptMin'
+        '400':
+         $ref: '#/responses/BadClient'
+        '404':
+         $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/BEL/NS/autocomplete':
+    get:
+      tags:
+        - BEL retrieval
+      summary: Autocomplete BEL concepts in a specific namespace
+      description: >- #considers mappings?
+        Returns completions for the term, considering all labels and mappings in the specified BELIEF instance's subset of namespaces. Returns concepts paginated using page and size, including each concept's ID and prefLabel.
+      operationId: Terminology-AutoCompletion-Concepts-BELNS
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/autoCompleteQueryParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+              $ref: '#/definitions/PagedBELConceptMin'
+        '400':
+             $ref: '#/responses/BadClient'
+        '404':
+             $ref: '#/responses/NotFound'
+  '/terminologies/{terminologyId}/concepts/BEL/Anno/autocomplete':
+    get:
+      tags:
+        - BEL retrieval
+      summary: Autocomplete BEL concepts in a specific annotation namespace
+      description: >- #considers mappings?
+        Returns completions for the term, considering all labels and mappings in the specified BELIEF instance's subset of annotation namespaces. Returns concepts paginated using page and size, including each concept's ID and prefLabel.
+      operationId: Terminology-AutoCompletion-Concepts-BELAnno
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - $ref: '#/parameters/langParam'
+        - $ref: '#/parameters/pageParam'
+        - $ref: '#/parameters/sizeParam'
+        - $ref: '#/parameters/autoCompleteQueryParam'
+      responses:
+        '200':
+          description: Successful response
+          schema:
+           $ref: '#/definitions/PagedBELConceptMin'
+        '400':
+          $ref: '#/responses/BadClient'
+        '404':
+          $ref: '#/responses/NotFound'
+  ########## Exporting
+  '/terminologies/{terminologyId}/versions/{versionTag}/export/{format}':
+    get:
+      tags:
+        - exporting
+      summary: Export a terminology.
+      description: Set format to specify export format. A file will be generated in the selected format and a link to the file will be returned.
+      operationId: Terminology-Export
+      parameters:
+        - $ref: '#/parameters/terminologyIDParam'
+        - $ref: '#/parameters/versionTagParam'
+        - in: path
+          name: format
+          description: Options are belns/belanno/jpm-model.
+          required: true
+          type: string
+          enum:
+            - belns
+            - belanno
+            - jpm-model
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: string
+            example: 'files.temowl.tmp/generated/annons.belanno'
+            $ref: '#/definitions/Error'
+        '400':
+          $ref: '#/responses/BadClient'
+        '404':
+          $ref: '#/responses/NotFound'
+####################### Object Definitions
+definitions:
+  Terminology:
+    type: object
+    description: "A Terminology"
+    required:
+      - terminologyID
+      - baseURL
+      - shortName
+    properties:
+      terminologyID:
+        description: "A unique ID of the Terminology. Used as a prefix for CURIES, and a Parameter in different API
+        calls."
+        type: string
+        example: 'GO'
+      baseURL:
+        description: "Base URL of the Terminology can be used to subsitute a CURIE Prefix."
+        type: string
+        example: 'http://purl.obolibrary.org/obo/GO_'
+      longName:
+        description: "The Name of the Terminology."
+        type: string
+        example: 'Gene Ontology'
+      descriptions:
+       # multiple languages?!?!?
+       description: "A Description of the Terminology"
+       $ref: '#/definitions/Description'
+      citation:
+       description: "Article to cite if this Terminology is used."
+       type: string
+       example: 'https://www.ncbi.nlm.nih.gov/pubmed/10802651'
+      versiontags:
+        description: "A list of versionTags that are present for this Terminology"
+        type: string
+        example: 'api.example.org/terminologies/GO/versionTags'
+  Concept:
+    type: object
+    description: "A Concept"
+    required:
+      - conceptID
+    properties:
+      conceptID:
+        description: "A unique ID for the given Concept. This is either a CURIE or an IRI."
+        type: string
+        example: 'GO:0008289'
+      prefLabel:
+        description: "The preferred name of a Concept."
+        $ref: '#/definitions/Label'
+      description:
+        # multiple languages?!?!?
+        description: "A description of a Concept."
+        $ref: '#/definitions/Description'
+      altLabels:
+        description: "Use this Link to retrieve altLabels."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/labels'
+      mappings:
+        description: "Use this Link to retrieve mappings."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/mappings'
+      directBroader:
+        description: "Use this Link to retrieve all concepts that are directly broader in the concept hierarchy."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/broader'
+      allBroader:
+        description: "Use this Link to retrieve all concepts that are directly and transitive broader in the concept hierarchy."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/broader?transitive=true'
+      directNarrower:
+        description: "Use this Link to retrieve all concepts that are directly narrower in the concept hierarchy."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/narrower'
+      allNarrower:
+        description: "Use this Link to retrieve all concepts The levels of concepts that are transitively narrower in the concept hierarchy."
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/narrower?transitive=true'
+      related:
+        description: "Use this Link to retrieve all related concepts"
+        type: string
+        example: 'api.example.org/terminologies/GO/concepts/GO:0008289/related'
+      excerptNarrower:
+        description: "An excerpt of the concept's narrower concepts."
+        type: array
+        items:
+          $ref: '#/definitions/ConceptMin'
+      excerptBroader:
+        description: "An excerpt of the concept's broader concepts."
+        type: array
+        items:
+          $ref: '#/definitions/ConceptMin'
+      excerptAltLabels:
+        description: "An excerpt of concept's altLabels."
+        type: array
+        items:
+          $ref: '#/definitions/Label'
+  ConceptMin:
+    type: object
+    description: "A minimal representation of a Concept. Most information are left out due space constrains."
+    required:
+      - conceptID
+      - link
+    properties:
+      conceptID:
+        description: "A unique ID for the given Concept. This is either a CURIE or an IRI."
+        type: string
+        example: 'GO:0008289'
+      prefLabel:
+        description: "The preferred name of a Concept."
+        $ref: '#/definitions/Label'
+      link:
+        description: "This Link can be used to obtain a full representation of the Concept."
+        type: string
+        example: 'api.example.org//terminologies/GO/concepts/GO:0008289/'
+      parent:
+        description: "Is the concept a parent of other concepts?"
+        type: boolean
+        example: true
+  Label:
+    type: object
+    description: "A `name` that describes a Concept."
+    required:
+      - name
+      - lang
+    properties:
+      name: #ID
+        description: "A name that describes a Concept."
+        type: string
+        example: 'lipid binding'
+      lang:
+        description: "The language of this Label, as defined by https://tools.ietf.org/html/bcp47."
+        type: string
+        example: 'en'
+  Description:
+    type: object
+    description: "A `description` in a specific language."
+    required:
+      - description
+      - lang
+    properties:
+      description:
+        description: "A description."
+        type: string
+        example: 'This is a fairly long description.'
+      lang:
+        description: "The language of this description, as defined by https://tools.ietf.org/html/bcp47."
+        type: string
+        example: 'en'
+  Mapping:
+    type: object
+    required:
+     - conceptA
+    properties:
+      conceptA:
+        $ref: '#/definitions/ConceptMin'
+      mappedConcepts:
+        type: array
+        items:
+          $ref: '#/definitions/MappingRelation'
+  MappingRelation:
+    type: object
+    description: "A binary Relationship between concepts of different Terminologies. Can be identified in queries from
+    both concepts. As one of parameter of the relation is already given the model only shows the "
+     #conceptA ommitted from this model, see Get-Mappings response definition
+    required:
+      - type
+      - conceptB
+    properties:
+      type:
+        type: string
+        description: "Defines the mapping relationship type."
+        enum:
+          - exactMatch
+          - closeMatch
+          - relatedMatch
+      conceptB:
+        description: "The Concept that is is relation with the given type."
+        $ref: '#/definitions/ConceptMin'
+  VersionTag:
+    type: object
+    required:
+      - shortName
+      - timestamp
+    properties:
+      shortName:
+        type: string
+        description: "A short unique meaningfull name of this version. Like a release name."
+        example: "etch"
+      timestamp:
+        type: string
+        format: date-time
+        description: "The time at which the version tag was created."
+        example: "2018-04-15-8:30"
+      description:
+        description: "A description of a version."
+        $ref: '#/definitions/Description'
+####################### Other definitions
+  Error:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+        example: 400
+      message:
+        type: string
+        description: error type
+      cause:
+        type: string
+        description: detailed information on what happened
+####################### Pagination extensions
+  Page:
+    type: object
+    required:
+      - number
+      - numberOfElements
+      - totalElements
+      - totalPages
+      - size
+    properties:
+        number:
+          type: integer
+          description: ' Number of this page'
+          example: "0"
+        numberOfElements:
+          type: integer
+          description: ' Number of elements in this page'
+          example: "4"
+        totalElements:
+          type: integer
+          description: 'total Number of elements'
+          example: "4"
+        totalPages:
+          type: integer
+          description: 'total Number of page'
+          example: "1"
+        size:
+          type: integer
+          description: 'size of a page'
+          example: "10"
+  PagedConceptMin:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                    $ref: '#/definitions/ConceptMin'
+  PagedTerminology:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                 $ref: '#/definitions/Terminology'
+  PagedTerminologySet:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+    required:
+        -  content
+    properties:
+        content:
+            type: array
+            items:
+            $ref: '#/definitions/TerminologySet'
+  PagedLabel:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                  $ref: '#/definitions/Label'
+  PagedMapping:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                  $ref: '#/definitions/Mapping'
+  PagedVersion:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                  $ref: '#/definitions/VersionTag'
+####################### BEL extensions
+  BEL:
+    type: object
+    properties:
+        encoding:
+          type: string
+          description: 'Encoding of the Concept if present in namespaceFile, otherwise empty.'
+          example: 'E'
+        markedNS:
+          type: boolean
+          description: 'Whether this concept is marked to appear in the namespaceFile.'
+          example: 'true'
+        markedAnno:
+          type: boolean
+          description: 'Whether this concept is marked to appear in the annotationFile.'
+          example: 'false'
+  BELConceptMin:
+    allOf:
+      - $ref: '#/definitions/ConceptMin'
+      - $ref: '#/definitions/BEL'
+  BELConcept:
+    allOf:
+      - $ref: '#/definitions/Concept'
+      - $ref: '#/definitions/BEL'
+  PagedBELConceptMin:
+    allOf:
+        - $ref: '#/definitions/Page'
+        - type: object
+          required:
+           - content
+          properties:
+            content:
+                type: array
+                items:
+                  $ref: '#/definitions/BELConceptMin'
