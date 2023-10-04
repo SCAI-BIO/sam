@@ -21,13 +21,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
-    - name: maven-settings-xml-action
-      uses: whelk-io/maven-settings-xml-action@v20
-      with:
-        repositories: '[{ "id": "central", "url": "https://repo1.maven.org/maven2" }, { "id": "github", "url": "https://maven.pkg.github.com/SCAI-BIO/owl-tooling" }]'
-        servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
-        
+
+    - name: Create settings.xml
+      uses: s4u/maven-settings-action@v2.8.0
     
     - uses: actions/checkout@v3
     - name: Set up JDK 8
