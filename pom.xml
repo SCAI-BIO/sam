@@ -297,4 +297,20 @@
 		</plugins>
 	</build>
 	<description>API to retrieve and export Terminologies / Ontologies and their contents.</description>
+
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub owl-tooling</name>
+            <url>https://maven.pkg.github.com/SCAI-BIO/owl-tooling</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+	
 </project>
