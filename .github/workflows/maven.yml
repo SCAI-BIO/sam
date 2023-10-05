@@ -48,7 +48,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
         server-id: github 
-        settings-path: /home/runner/.m2/settings.xml
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy
       env:
