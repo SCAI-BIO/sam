@@ -49,13 +49,7 @@ jobs:
         cache: maven
         server-id: github 
         settings-path: /home/runner/.m2/settings.xml
-    - name: Create settings.xml
-      uses: s4u/maven-settings-action@v2.8.0
-      with:
-        servers: '[{"id": "github", "username":  "${{ secrets.TA_USERNAME }}", "password": "${{ secrets.TA_PASSWORD }}"}]'
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml -s /home/runner/.m2/settings.xml spring-boot:repackage
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $/home/runner/.m2/settings.xml
+      run: mvn deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
