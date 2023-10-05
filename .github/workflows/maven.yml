@@ -34,6 +34,7 @@ jobs:
       run: mvn clean install -s /home/runner/.m2/settings.xml spring-boot:repackage
       
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
