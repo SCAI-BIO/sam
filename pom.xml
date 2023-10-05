@@ -36,6 +36,14 @@
 	<name>sam-api</name>
 	<packaging>jar</packaging>
 
+	<distributionManagement>
+		<repository>
+		  <id>github</id>
+		  <name>GitHub SCAI-BIO Apache Maven Packages</name>
+		  <url>https://maven.pkg.github.com/SCAI-BIO/sam</url>
+		</repository>
+	 </distributionManagement>
+
 	<!-- We use the BOM to manage our spring dependencies instead of the parent -->
 	<dependencyManagement>
 		<dependencies>
