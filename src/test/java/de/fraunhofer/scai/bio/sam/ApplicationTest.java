@@ -16,14 +16,10 @@
 
 package de.fraunhofer.scai.bio.sam;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import de.fraunhofer.scai.bio.sam.domain.DAO.Concept;
 import de.fraunhofer.scai.bio.sam.domain.DAO.Terminology;
 import de.fraunhofer.scai.bio.sam.service.ConceptService;
-import de.fraunhofer.scai.bio.sam.service.ServiceRegistry;
 import de.fraunhofer.scai.bio.sam.service.TerminologyService;
-import de.fraunhofer.scai.bio.sam.service.exceptions.NotFoundException;
 import de.fraunhofer.scai.bio.sam.service.impl.TestConfigOLS;
 import de.fraunhofer.scai.bio.sam.service.impl.delegator.TerminologyServiceDelegator;
 
@@ -41,7 +37,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
-import java.util.EnumSet;
 
 
 @RunWith(SpringRunner.class)
@@ -73,8 +68,6 @@ public class ApplicationTest {
                 logger.info("Terminology:{}", terminology.getOlsID());
                 Page<Concept> pageC = null;
                 do {
-                    Pageable requestC = (pageC != null) ? pageC.nextPageable() : PageRequest.of(0, 500);
-                    //  pageC = service.getConceptsOfTerminology(terminology.getOlsID(),requestC);
                     for (Concept concept : pageC.getContent()) {
                         logger.info("\tconcept:{}", concept);
                     }

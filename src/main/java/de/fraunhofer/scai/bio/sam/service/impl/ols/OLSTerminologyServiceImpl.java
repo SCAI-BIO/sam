@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.time.OffsetDateTime;
 
+import javax.inject.Singleton;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Profile;
@@ -114,7 +116,9 @@ public class OLSTerminologyServiceImpl implements TerminologyService {
                 return p != null && p.hasContent() ? p : Page.empty();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            // TODO: ebi ols fails for baseURL/ontologies -> investigate why
+            logger.error(" >>> querying all terminologies from {} failed", this.url);
+            return Page.empty();
         }
         return null;
     }

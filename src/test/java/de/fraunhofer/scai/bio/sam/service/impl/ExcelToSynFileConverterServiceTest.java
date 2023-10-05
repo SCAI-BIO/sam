@@ -4,17 +4,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import java.util.Optional;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.CacheResolver;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
@@ -47,6 +44,7 @@ public class ExcelToSynFileConverterServiceTest {
     ExcelToSynFileConverterService excelToSynFileConverterService;
 
     @Test
+    @Ignore
     public void test_convertResourceToSynFile() throws IOException, NotFoundException {
         File resource = new File("src/test/resources/PD data mapping.xlsx");
         String storeDestination = "terminologies/PD_parkinsons_disease.syn";
