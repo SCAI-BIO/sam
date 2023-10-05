@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Create settings.xml
-    - uses: s4u/maven-settings-action@v2.8.0
+      uses: s4u/maven-settings-action@v2.8.0
       with:
         servers: '[{"id": "github", "username":  "${{ secrets.TA_USERNAME }}", "password": "${{ secrets.TA_PASSWORD }}"}]'
     - name: Build with Maven
