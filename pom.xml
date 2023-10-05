@@ -31,9 +31,10 @@
 		<spring-cloud-netflix-version>2.2.2.RELEASE</spring-cloud-netflix-version>
 	</properties>
 
-	<artifactId>sam-api</artifactId>
+	<groupId>de.fraunhofer.scai.bio</groupId>
+	<artifactId>sam</artifactId>
 	<version>1.2-SNAPSHOT</version>
-	<name>sam-api</name>
+	<name>sam</name>
 	<packaging>jar</packaging>
 
 	<distributionManagement>
