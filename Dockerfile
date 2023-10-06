@@ -16,7 +16,7 @@ ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:GCPauseIntervalMillis=1000"
 ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:InitiatingHeapOccupancyPercent=35"
 ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:+PrintCommandLineFlags"
 ARG JAR_FILE
-ADD sam-1.2-SNAPSHOT.jar /usr/share/sam/sam.jar
+ADD target/sam-1.2-SNAPSHOT.jar /usr/share/sam/sam.jar
 COPY configurations/ /usr/share/sam/configurations/
 COPY terminologies/ /usr/share/sam/terminologies/
 RUN ls -la /usr/share/sam/terminologies/*
