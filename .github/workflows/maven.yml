@@ -47,6 +47,8 @@ jobs:
     - name: Extract Maven project version
       run: echo ::set-output name=version::$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)
       id: project
+    - name: Check contents of traget folder
+      run: pwd & ls & ls target
     - name: Build & push docker container
       uses: docker/build-push-action@v2
       with:
