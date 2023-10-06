@@ -51,4 +51,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ghcr.io/${{ github.repository }}:latest, ghcr.io/${{ github.repository }}:${{ steps.project.outputs.version }}
+        tags: ghcr.io/scai-bio/sam:latest, ghcr.io/scai-bio/sam:${{ steps.project.outputs.version }}
