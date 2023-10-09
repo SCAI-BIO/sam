@@ -2,7 +2,7 @@ FROM docker.io/library/openjdk:alpine
 
 LABEL org.opencontainers.image.authors="marc.jacobs@scai.fraunhofer.de"
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-jar", "/usr/share/sam/sam-api.jar" ,  "--its.enable=true", "--its.concepts=/usr/share/sam/terminologies/key2aimed-concepts.tsv", "--its.terminologies=/usr/share/sam/terminologies/key2aimed-terminologies.tsv"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-jar", "/usr/share/sam/sam.jar" ,  "--its.enable=true", "--its.concepts=/usr/share/sam/terminologies/key2aimed-concepts.tsv", "--its.terminologies=/usr/share/sam/terminologies/key2aimed-terminologies.tsv"]
 EXPOSE 8080/tcp
 ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Xmx16g"
 ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -XX:+UnlockExperimentalVMOptions"
